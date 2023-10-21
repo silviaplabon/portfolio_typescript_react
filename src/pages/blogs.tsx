@@ -4,8 +4,17 @@ import { blogs } from "../common/common";
 
 export function BlogsCard() {
   return (
-    <Box display="flex" flexDirection="column">
- <Typography variant="h4" align="center" mt={6} mb={3} sx={{fontFamily:'sans-serif',background: "rgba(0,0,0,.2)!important;",color:"white"}}>
+    <Box display="flex" flexDirection="column" sx={{
+
+      backgroundImage: `url('https://images.unsplash.com/photo-1550895030-823330fc2551?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, 
+      backgroundSize: 'cover',
+      backgroundPosition: '50%',
+      backgrounRepeat:'repeat!important'
+      }} id="blogs">
+      <Box sx={{  width:'85%',margin:'auto'}}>
+
+
+ <Typography variant="h4" align="center" mt={6} mb={3} p={1} sx={{fontFamily:'sans-serif',background: "rgba(0,0,0,.2)!important;",color:"white"}}>
        LATEST BLOG
       </Typography>
       <Typography variant="h6" align="center" mb={3} sx={{color:"white"}}>
@@ -13,7 +22,7 @@ export function BlogsCard() {
       </Typography>
       <Grid container spacing={5}>
         {blogs?.map((blog) => (
-          <Grid item xs={12} sm={6} lg={4}>
+          <Grid item xs={12} sm={6} lg={3}>
             <BlogCard blog={blog} key={blog.id}></BlogCard>
           </Grid>
         ))}
@@ -37,6 +46,7 @@ export function BlogsCard() {
           View Blog
         </Button>
       </Box>
-    </Box>
+      </Box>
+      </Box>
   );
 }

@@ -30,6 +30,15 @@ export const blogs: Blog[] = [
     subtitle:
       "As a result of the release of ES6, two new methods of creating variables have been introduced: let and const. Preceding a discussion of the let and const keywords, we will look at how to create a variable in javascript in the most basic method possible, by utilizing the var keyword.",
   },
+  {
+    name: "Var Vs Let Vs Const",
+    link: "https://silviaplabon.medium.com/js-popular-method-of-string-b15a9c8a9839",
+    image: "https://i.ibb.co/2nDX5nf/javascript1or.jpg",
+    id: 2,
+    published_date: "May 5, 2021",
+    subtitle:
+      "As a result of the release of ES6, two new methods of creating variables have been introduced: let and const. Preceding a discussion of the let and const keywords, we will look at how to create a variable in javascript in the most basic method possible, by utilizing the var keyword.",
+  },
 ];
 export const skillsArea: SkillArea[] = [
   {

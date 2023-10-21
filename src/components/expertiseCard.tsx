@@ -9,10 +9,12 @@ import { makeStyles } from "@mui/styles";
 const useStyles = makeStyles({
   card_media: {
     borderRadius: "0.675rem",
+    
   },
   card_subtitle: {
     height: "60px",
     overflow: "hidden",
+    color:'white!important',
     display: "-webkit-box",
     textOverflow: "ellipsis",
     "-webkit-line-clamp": "3!important",
@@ -48,7 +50,7 @@ export function ExpertiseCard({ data}: ExpertiseCardProps) {
           src={data.image}
           alt="blog image"
         />
-       <Typography   className={classes.card_title} mt={2} sx={{fontWeight:'bold',color:"white"}}>
+       <Typography   className={classes.card_title} mt={2} sx={{fontWeight:'bold',color:'white'}}>
           {data.name}
         </Typography>
         <Typography

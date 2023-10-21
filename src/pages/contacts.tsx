@@ -67,7 +67,15 @@ export function Contacts() {
   return (
     <>
     <ToastContainer/>
-    <Typography variant="h4" align="center" mt={6} mb={3} sx={{fontFamily:'sans-serif',background: "rgba(0,0,0,.2)!important;",color:"white"}}>
+    <Box display="flex" flexDirection="column" sx={{
+
+// backgroundImage: `url('https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBvcnRmb2xpbyUyMGltYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60)`, 
+backgroundSize: 'cover',
+backgroundPosition: '50%',
+backgrounRepeat:'no-repeat'
+}} id="contacts">
+<Box sx={{  width:'85%',margin:'auto'}}>
+    <Typography variant="h4" align="center" mt={6} p={1} mb={3} sx={{fontFamily:'sans-serif',background: "rgba(0,0,0,.2)!important;",color:"white"}}>
        Contact
       </Typography>
     <Grid container spacing={7}>
@@ -154,6 +162,8 @@ export function Contacts() {
         </Box>
       </Grid>
     </Grid>
+    </Box>
+    </Box>
     </>
   );
 }
