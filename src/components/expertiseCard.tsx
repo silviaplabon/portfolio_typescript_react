@@ -1,20 +1,17 @@
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import {SkillArea } from "../common/types";
+import { SkillArea } from "../common/types";
 import { makeStyles } from "@mui/styles";
-
-
 
 const useStyles = makeStyles({
   card_media: {
     borderRadius: "0.675rem",
-    
   },
   card_subtitle: {
     height: "60px",
     overflow: "hidden",
-    color:'white!important',
+    color: "white!important",
     display: "-webkit-box",
     textOverflow: "ellipsis",
     "-webkit-line-clamp": "3!important",
@@ -36,32 +33,36 @@ const useStyles = makeStyles({
 });
 
 interface ExpertiseCardProps {
-  data: SkillArea
+  data: SkillArea;
 }
-export function ExpertiseCard({ data}: ExpertiseCardProps) {
+export function ExpertiseCard({ data }: ExpertiseCardProps) {
   const classes = useStyles();
 
   return (
-      <CardContent >
+    <CardContent>
       <CardMedia
-          className={classes.card_media}
-          component="img"
-          height="180"
-          src={data.image}
-          alt="blog image"
-        />
-       <Typography   className={classes.card_title} mt={2} sx={{fontWeight:'bold',color:'white'}}>
-          {data.name}
-        </Typography>
-        <Typography
-          variant="body2"
-          color="text.secondary"
-          mb={2}
-          className={classes.card_subtitle}
-        >
-          {data.subtitle?.split(" ")?.slice(0, 30).join(" ") + "..."}
-        </Typography>
-       
-      </CardContent>
+        className={classes.card_media}
+        component="img"
+        height="180"
+        src={data.image}
+        sx={{ boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)" }}
+        alt="blog image"
+      />
+      <Typography
+        className={classes.card_title}
+        mt={2}
+        sx={{ fontWeight: "bold", color: "white" }}
+      >
+        {data.name}
+      </Typography>
+      <Typography
+        variant="body2"
+        color="text.secondary"
+        mb={2}
+        className={classes.card_subtitle}
+      >
+        {data.subtitle?.split(" ")?.slice(0, 30).join(" ") + "..."}
+      </Typography>
+    </CardContent>
   );
 }

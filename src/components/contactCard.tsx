@@ -11,10 +11,9 @@ export function ContactCard({ contact }: ContactCardProps) {
         sx={{
           backgroundColor: contact.color,
           borderRadius: "5px",
-          padding: "5px 16px!important",
-          width: "50px!important",
+          padding: "5px 18px!important",
           height: "40px",
-          color:"white"
+          color: "white",
         }}
         display="flex"
         alignItems="center"
@@ -22,8 +21,8 @@ export function ContactCard({ contact }: ContactCardProps) {
         {contact.icon}
       </Box>
       <Box display="flex" flexDirection="column" p={1}>
-        <Typography sx={{color:"white"}}>{contact.name}</Typography>
-        <Typography sx={{color:"white"}}>{contact.title}</Typography>
+        <Typography sx={{ color: "white" }} fontFamily="PeroBold">{contact.name}</Typography>
+        <Typography sx={{ color: "white" }} fontFamily="PeroRegular">{contact.title}</Typography>
       </Box>
     </Box>
   );

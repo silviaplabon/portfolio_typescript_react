@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "PeroBold";
+    src: url("./assets/Pero/Pero_bold.otf") format("opentype");
+}
+@font-face {
+    font-family: "PeroRegular";
+    src: url("./assets/Pero/PeroRegular.otf") format("opentype");
+}
+  
+p{
+    font-family: 'PeroRegular';
+}

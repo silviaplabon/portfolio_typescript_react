@@ -28,12 +28,14 @@ export function CustomCardInput({
         padding: "0",
         color: "white",
         width: widthPercentage,
+        fontFamily:"PeroBold",
         "& .MuiFormControl-root": {
           backgroundColor: "#001229!important",
           padding: "0px!important",
           width: "100%!important",
         },
         "& .MuiOutlinedInput-input": {
+          fontFamily:"PeroBold",
           color: "white",
         },
         "& .MuiOutlinedInput-multiline": {
@@ -60,6 +62,7 @@ export function CustomCardInput({
           padding: "12px",
           fontWeight: 500,
           fontSize: "0.875rem",
+          fontFamily:"PeroRegular!important"
         }}
         name={name}
       />

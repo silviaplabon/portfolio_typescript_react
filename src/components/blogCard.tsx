@@ -6,7 +6,7 @@ import { Blog } from "../common/types";
 import { makeStyles } from "@mui/styles";
 
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
-import { Box,} from "@mui/material";
+import { Box } from "@mui/material";
 
 const useStyles = makeStyles({
   card_media: {
@@ -44,16 +44,22 @@ export function BlogCard({ blog }: BlogCardProps) {
     window.open(url, "_blank");
   };
   return (
-    <Card sx={{padding:"0.6rem"}}>
-      <CardContent >
-        <Typography mb={1}>{blog.published_date}</Typography>
-        <Typography mb={0}  className={classes.card_title} sx={{fontWeight:'bold'}}>
+    <Card sx={{ padding: "0.6rem" }}>
+      <CardContent>
+        <Typography mb={1} fontFamily="PeroBold">{blog.published_date}</Typography>
+        <Typography
+          mb={0}
+          className={classes.card_title}
+          sx={{ fontWeight: "bold" }}
+          fontFamily="PeroBold"
+        >
           {blog.name}
         </Typography>
         <Typography
           variant="body2"
           color="text.secondary"
           mb={2}
+          fontFamily="PeroRegular"
           className={classes.card_subtitle}
         >
           {blog.subtitle?.split(" ")?.slice(0, 30).join(" ") + "..."}
@@ -64,9 +70,15 @@ export function BlogCard({ blog }: BlogCardProps) {
           mb={3}
           sx={{ cursor: "pointer" }}
         >
-          <Typography sx={{color:'black'}} onClick={()=>redirectToBlog(blog.link)}>Read More</Typography>
-          <BsFillArrowRightCircleFill onClick={()=>redirectToBlog(blog.link)}
-       
+          <Typography
+            sx={{ color: "black" }}
+            fontFamily="PeroBold"
+            onClick={() => redirectToBlog(blog.link)}
+          >
+            Read More
+          </Typography>
+          <BsFillArrowRightCircleFill
+            onClick={() => redirectToBlog(blog.link)}
             className={classes.read_more_arrow_icon}
           ></BsFillArrowRightCircleFill>
         </Box>
@@ -74,6 +86,7 @@ export function BlogCard({ blog }: BlogCardProps) {
           className={classes.card_media}
           component="img"
           height="210"
+          sx={{ boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)" }}
           src={blog.image}
           alt="blog image"
         />

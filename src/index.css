@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "PeroBold";
+  src: url("./assets/Pero/Pero_bold.otf") format("opentype");
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family:PeroBold;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
@@ -12,5 +17,6 @@
 }
 
 .body{
-  margin:'0px!important'
+  margin:'0px!important';
+  font-family:PeroBold;
 }
