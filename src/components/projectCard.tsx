@@ -72,6 +72,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const matches = useMediaQuery("(max-width:900px)");
+  const matchesSmall = useMediaQuery("(max-width:600px)");
 
   return (
     <Card sx={{ padding: "0.6rem" }}>
@@ -100,16 +101,25 @@ export function ProjectCard({ project }: ProjectCardProps) {
             alt="blog image"
           />
         </Box>
-        <Typography mb={1} marginTop="20px" fontFamily="PeroBold" sx={{ fontWeight: "bold" }}>
+        <Typography
+          mb={1}
+          marginTop="20px"
+          fontFamily="PeroBold"
+          sx={{ fontWeight: "bold" }}
+        >
           {project.projectName}
         </Typography>
-        <Typography mb={1} fontFamily="PeroRegular" className={classes.project_description}>
+        <Typography
+          mb={1}
+          fontFamily="PeroRegular"
+          className={classes.project_description}
+        >
           {project.description}
         </Typography>
         <Box display="flex" justifyContent="space-between">
           <Box display="flex" alignItems="end">
             <Typography
-              sx={{ fontWeight: "bold", cursor: "pointer" }}
+              sx={{ fontWeight: "bold", cursor: "pointer" ,fontSize:matchesSmall?'11px':'15px'}}
               onClick={() => handleOpen()}
               fontFamily="PeroBold"
             >
@@ -179,9 +189,14 @@ export function ProjectCard({ project }: ProjectCardProps) {
               >
                 PROJECT OVERVIEW
               </Typography>
-              <Typography fontFamily="PeroRegular">{project.projectOverview}</Typography>
+              <Typography fontFamily="PeroRegular">
+                {project.projectOverview}
+              </Typography>
 
-              <Typography sx={{ marginTop: "20px", fontStyle: "italic" }} fontFamily="PeroRegular">
+              <Typography
+                sx={{ marginTop: "20px", fontStyle: "italic" }}
+                fontFamily="PeroRegular"
+              >
                 {project.description}
               </Typography>
               <Card
@@ -194,37 +209,39 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 }}
               >
                 {/* <SimpleBar style={{ maxHeight: "400px", margin: "10px" }}> */}
-                  <Grid container sx={{ padding: !matches ? "40px" : "20px" }}>
-                    {project?.performedTasks &&
-                      project?.performedTasks?.map((performedTask) => (
-                        <Box
-                          display="flex"
-                          width="100%"
-                          flexDirection="column"
-                          marginBottom="20px"
+                <Grid container sx={{ padding: !matches ? "40px" : "20px" }}>
+                  {project?.performedTasks &&
+                    project?.performedTasks?.map((performedTask) => (
+                      <Box
+                        display="flex"
+                        width="100%"
+                        flexDirection="column"
+                        marginBottom="20px"
+                      >
+                        <Button
+                          variant="outlined"
+                          sx={{
+                            width: matches ? "100%" : "100%",
+                            marginRight: "0.2rem",
+                            marginTop: "0.7rem",
+                            border: "none!important",
+                            color: "white!important",
+                            backgroundColor: "#001d37!important",
+                            height: "40px",
+                            "& .MuiButton-label": {
+                              fontWeight: "500",
+                            },
+                            fontFamily: "PeroBold",
+                          }}
                         >
-                          <Button
-                            variant="outlined"
-                            sx={{
-                              width: matches? '100%':'100%',
-                              marginRight: "0.2rem",
-                              marginTop: "0.7rem",
-                              border: "none!important",
-                              color: "white!important",
-                              backgroundColor: "#001d37!important",
-                              height: "40px",
-                              "& .MuiButton-label": {
-                                fontWeight: "500",
-                              },
-                              fontFamily:"PeroBold"
-                            }}
-                          >
-                            {performedTask.technologies}
-                          </Button>
-                          {performedTask.tasks?.map((task) => <li style={{fontFamily:"PeroRegular"}}>{task}</li>)}
-                        </Box>
-                      ))}
-                    {/* <Grid item xs={12} sm={6}>
+                          {performedTask.technologies}
+                        </Button>
+                        {performedTask.tasks?.map((task) => (
+                          <li style={{ fontFamily: "PeroRegular" }}>{task}</li>
+                        ))}
+                      </Box>
+                    ))}
+                  {/* <Grid item xs={12} sm={6}>
                   <Typography sx={{ fontWeight: "bold" }}>Client</Typography>
                   <Typography>RETROKIT</Typography>
                 </Grid>
@@ -242,13 +259,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
                   <Typography sx={{ fontWeight: "bold" }}>YEAR</Typography>
                   <Typography>2021</Typography>
                 </Grid> */}
-                  </Grid>
+                </Grid>
                 {/* </SimpleBar> */}
               </Card>
 
-              <SimpleBar style={{ height: "350px", marginTop: "10px" }}>
+              {/* <SimpleBar style={{ height: "350px", marginTop: "10px" }}> */}
               <ImageList
-                sx={{ width: "100%", height: 350 }}
+                sx={{ width: "100%" }}
                 variant="quilted"
                 cols={4}
                 rowHeight={175}
@@ -268,7 +285,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                   </ImageListItem>
                 ))}
               </ImageList>
-              </SimpleBar>
+              {/* </SimpleBar> */}
             </Box>
           </SimpleBar>
         </Box>

@@ -17,7 +17,13 @@ export function BlogsCard() {
         >
           Latest Blog
         </Typography>
-        <Typography variant="h6" align="center" mb={3} sx={{ color: "white" }} fontFamily="PeroBold">
+        <Typography
+          variant="h6"
+          align="center"
+          mb={3}
+          sx={{ color: "white" }}
+          fontFamily="PeroBold"
+        >
           My Articles and advice
         </Typography>
         <Grid container spacing={5}>
@@ -42,7 +48,7 @@ export function BlogsCard() {
               "& .MuiButton-label": {
                 fontWeight: "500",
               },
-              fontFamily:"PeroBold"
+              fontFamily: "PeroBold",
             }}
           >
             View More

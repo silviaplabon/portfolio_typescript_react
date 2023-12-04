@@ -267,7 +267,7 @@ export const projectsList: Project[] = [
           "Utilized Storybook to document and showcase UI components, improving design consistency and enabling faster iteration.",
           "Wrote comprehensive unit and integration tests with Jest, achieving 100% test coverage and enhancing code reliability.",
           "Led a team of developers in the design, development, and maintenance of web applications using React.js, achieving project objectives and exceeding client expectations.",
-          "I've crafted a sleek HTML template for the RetroKit process, seamlessly blending HTML and CSS. The design features a clean layout, intuitive navigation, and visually appealing process steps, providing a user-friendly experience."
+          "I've crafted a sleek HTML template for the RetroKit process, seamlessly blending HTML and CSS. The design features a clean layout, intuitive navigation, and visually appealing process steps, providing a user-friendly experience.",
         ],
       },
     ],
@@ -364,15 +364,49 @@ export const projectsList: Project[] = [
         cols: 2,
       },
       {
-        img:'https://i.ibb.co/9qmBxvk/Screenshot-from-2023-11-21-10-10-07.png',
-        title:'2waay',
-        rows: 2,
+        img: "https://i.ibb.co/9qmBxvk/Screenshot-from-2023-11-21-10-10-07.png",
+        title: "2waay",
       },
       {
-        img:'https://i.ibb.co/BNsgMnD/2waay-App-jpg.jpg',
-        title:'stripe',
+        img: "https://i.ibb.co/8j3MbDQ/campaigns.png",
+        title: "campaigns",
+      },
+      {
+        img: "https://i.ibb.co/GQqNLcv/collections.png",
+        title: "mobylogic",
+        cols: 2,
+      },
+      {
+        img: " https://i.ibb.co/h1zv9SK/cancel-Requests.png",
+        title: "2waay",
         rows: 2,
-      }
+        cols: 2,
+      },
+      {
+        img: "https://i.ibb.co/GW2bzvt/report.png",
+        title: "stripe",
+      },
+      {
+        img: "https://i.ibb.co/CH5DcFZ/billing.png",
+        title: "mobylogic",
+      },
+      {
+        img: "https://i.ibb.co/MZ5DwqN/users.png",
+        title: "2waay",
+        cols: 2,
+      },
+      {
+        img: "https://i.ibb.co/BNsgMnD/2waay-App-jpg.jpg",
+        title: "stripe",
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: "https://i.ibb.co/MC384HJ/campaign-Conversion-Report.png",
+        title: "stripe",
+        cols: 2,
+        rows: 2,
+      },
     ],
 
     performedTasks: [
@@ -455,7 +489,6 @@ export const projectsList: Project[] = [
         rows: 2,
         cols: 4,
       },
-     
     ],
     clientWebsite: "",
     performedTasks: [

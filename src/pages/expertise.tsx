@@ -17,7 +17,13 @@ export function Expertise() {
         >
           My Expertise
         </Typography>
-        <Typography variant="h6" align="center" mb={1} sx={{ color: "white" }} fontFamily="PeroBold">
+        <Typography
+          variant="h6"
+          align="center"
+          mb={1}
+          sx={{ color: "white" }}
+          fontFamily="PeroBold"
+        >
           What I Do
         </Typography>
         <Grid container>

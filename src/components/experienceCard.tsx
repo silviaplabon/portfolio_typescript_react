@@ -88,7 +88,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
                   "& .MuiButton-label": {
                     fontWeight: "500",
                   },
-                  fontFamily:"PeroBold"
+                  fontFamily: "PeroBold",
                 }}
               >
                 {skill}

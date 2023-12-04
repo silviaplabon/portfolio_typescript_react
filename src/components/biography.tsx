@@ -19,8 +19,8 @@ export function BiographyCard() {
           justifyContent="space-between"
           className={classes.biographyCol}
         >
-          <Typography   fontFamily="PeroBold">Name</Typography>
-          <Typography   fontFamily="PeroRegular">{Biography.name}</Typography>
+          <Typography fontFamily="PeroBold">Name</Typography>
+          <Typography fontFamily="PeroRegular">{Biography.name}</Typography>
         </Box>
       </Grid>
       <Grid item xs={12} sm={6}>
@@ -30,8 +30,8 @@ export function BiographyCard() {
           justifyContent="space-between"
           className={classes.biographyCol}
         >
-          <Typography   fontFamily="PeroBold">Age</Typography>
-          <Typography   fontFamily="PeroRegular">{Biography.age}</Typography>
+          <Typography fontFamily="PeroBold">Age</Typography>
+          <Typography fontFamily="PeroRegular">{Biography.age}</Typography>
         </Box>
       </Grid>
       <Grid item xs={12} sm={6}>
@@ -42,7 +42,7 @@ export function BiographyCard() {
           className={classes.biographyCol}
         >
           <Typography fontFamily="PeroBold">Email</Typography>
-          <Typography   fontFamily="PeroRegular">{Biography.email}</Typography>
+          <Typography fontFamily="PeroRegular">{Biography.email}</Typography>
         </Box>
       </Grid>
       <Grid item xs={12} sm={6}>
@@ -53,7 +53,7 @@ export function BiographyCard() {
           className={classes.biographyCol}
         >
           <Typography fontFamily="PeroBold">Birthday</Typography>
-          <Typography   fontFamily="PeroRegular">{Biography.birthday}</Typography>
+          <Typography fontFamily="PeroRegular">{Biography.birthday}</Typography>
         </Box>
       </Grid>
       <Grid item xs={12} sm={6}>
@@ -64,7 +64,7 @@ export function BiographyCard() {
           className={isMobile ? classes.biographyCol : ""}
         >
           <Typography fontFamily="PeroBold">Phone</Typography>
-          <Typography   fontFamily="PeroRegular">{Biography.phone}</Typography>
+          <Typography fontFamily="PeroRegular">{Biography.phone}</Typography>
         </Box>
       </Grid>
       <Grid item xs={12} sm={6}>
@@ -74,8 +74,8 @@ export function BiographyCard() {
           justifyContent="space-between"
           //   className={classes.biographyCol}
         >
-          <Typography   fontFamily="PeroBold">Address</Typography>
-          <Typography   fontFamily="PeroRegular">{Biography.address}</Typography>
+          <Typography fontFamily="PeroBold">Address</Typography>
+          <Typography fontFamily="PeroRegular">{Biography.address}</Typography>
         </Box>
       </Grid>
     </Grid>

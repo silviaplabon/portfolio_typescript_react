@@ -9,12 +9,11 @@ const useStyles = makeStyles({
     borderRadius: "0.675rem",
   },
   card_subtitle: {
-    height: "60px",
     overflow: "hidden",
     color: "white!important",
     display: "-webkit-box",
     textOverflow: "ellipsis",
-    "-webkit-line-clamp": "3!important",
+    "-webkit-line-clamp": "7!important",
     "-webkit-box-orient": "vertical",
   },
   card_title: {
@@ -61,7 +60,7 @@ export function ExpertiseCard({ data }: ExpertiseCardProps) {
         mb={2}
         className={classes.card_subtitle}
       >
-        {data.subtitle?.split(" ")?.slice(0, 30).join(" ") + "..."}
+        {data.subtitle}
       </Typography>
     </CardContent>
   );

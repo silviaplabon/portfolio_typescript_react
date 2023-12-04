@@ -9,42 +9,53 @@ import { Portfolios } from "./pages/portfolios";
 import "simplebar-react/dist/simplebar.min.css";
 import { Experience } from "./pages/experience";
 import { BiographySkillsEducation } from "./pages/biographySkillsEducation";
-import { Theme } from "@mui/material/styles";
+import { Theme, ThemeProvider } from "@mui/material/styles";
 import { Footer } from "./components/Footer";
-import { atom } from 'jotai'
-export const stepNumberAtom = atom(1)
+import { atom } from "jotai";
+import { createTheme } from "@mui/material/styles";
+
+export const stepNumberAtom = atom(1);
 
 declare module "@mui/styles/defaultTheme" {
   interface DefaultTheme extends Theme {}
 }
 
+const theme = createTheme({
+  palette: {
+    secondary: {
+      main: "#ff014f",
+    },
+    
+  },
+});
 
 function App() {
- 
   return (
-    <Box fontFamily="PeroRegular" id="home">
-      <AppBar  />
-      <Box
-        sx={{
-          backgroundColor: "#0f172a",
-          width: "100%",
-          minHeight: "100vh",
-          margin: "0",
-          padding: "0",
-        }}
-      >
-        <Box>
-          <AboutMe></AboutMe>
-          <Experience></Experience>
-          <BiographySkillsEducation></BiographySkillsEducation>
-          <Expertise></Expertise>
-          <Portfolios></Portfolios>
-          <BlogsCard></BlogsCard>
-          <Contacts></Contacts>
-          <Footer></Footer>
+    <ThemeProvider theme={theme}>
+      <Box fontFamily="PeroRegular" id="home">
+        <AppBar />
+        <Box
+          sx={{
+            backgroundColor: "#0f172a",
+            width: "100%",
+            minHeight: "100vh",
+            margin: "0",
+            padding: "0",
+          }}
+        >
+          <Box>
+            <AboutMe></AboutMe>
+            <Experience></Experience>
+            <BiographySkillsEducation></BiographySkillsEducation>
+            <Expertise></Expertise>
+            <Portfolios></Portfolios>
+            <BlogsCard></BlogsCard>
+            <Contacts></Contacts>
+            <Footer></Footer>
+          </Box>
         </Box>
       </Box>
-    </Box>
+    </ThemeProvider>
   );
 }
 

@@ -21,8 +21,12 @@ export function ContactCard({ contact }: ContactCardProps) {
         {contact.icon}
       </Box>
       <Box display="flex" flexDirection="column" p={1}>
-        <Typography sx={{ color: "white" }} fontFamily="PeroBold">{contact.name}</Typography>
-        <Typography sx={{ color: "white" }} fontFamily="PeroRegular">{contact.title}</Typography>
+        <Typography sx={{ color: "white" }} fontFamily="PeroBold">
+          {contact.name}
+        </Typography>
+        <Typography sx={{ color: "white" }} fontFamily="PeroRegular">
+          {contact.title}
+        </Typography>
       </Box>
     </Box>
   );

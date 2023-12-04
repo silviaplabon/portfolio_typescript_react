@@ -17,7 +17,13 @@ export function Experience() {
         >
           My Experience
         </Typography>
-        <Typography variant="h6" align="center" mb={1} sx={{ color: "white" }} fontFamily="PeroBold">
+        <Typography
+          variant="h6"
+          align="center"
+          mb={1}
+          sx={{ color: "white" }}
+          fontFamily="PeroBold"
+        >
           What I Have
         </Typography>
         <Grid container sx={{ width: "100%", margin: "auto" }}>
@@ -31,10 +37,18 @@ export function Experience() {
             flexDirection="column"
             justifyContent="center"
           >
-            <Typography px={2} sx={{ fontSize: "25px", fontWeight: "bold" }} fontFamily="PeroBold">
+            <Typography
+              px={2}
+              sx={{ fontSize: "25px", fontWeight: "bold" }}
+              fontFamily="PeroBold"
+            >
               Software Engineer
             </Typography>
-            <Typography px={2} sx={{ fontSize: "12px", fontWeight: "500" }} fontFamily="PeroRegular">
+            <Typography
+              px={2}
+              sx={{ fontSize: "12px", fontWeight: "500" }}
+              fontFamily="PeroRegular"
+            >
               Profecia Links Consulting Private LTD
             </Typography>
             <Typography px={2} fontFamily="PeroRegular">

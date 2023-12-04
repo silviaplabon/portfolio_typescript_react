@@ -6,19 +6,17 @@ import { TemporaryDrawer } from "./sidebar";
 import { useAtom } from "jotai";
 import { stepNumberAtom } from "../App";
 
-
 export function AppBar() {
   const matches = useMediaQuery("(max-width:1201px)");
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [,setStepNumber] = useAtom(stepNumberAtom)
+  const [, setStepNumber] = useAtom(stepNumberAtom);
   return (
-    <Box sx={{ backgroundColor: "#0f172a",width:'100%'}}>
+    <Box sx={{ backgroundColor: "#0f172a", width: "100%" }}>
       <TemporaryDrawer isOpen={isOpen} setIsOpen={setIsOpen}></TemporaryDrawer>
 
       <Box
         width="100%"
         display="flex"
-    
         justifyContent="space-between"
         sx={{ width: "100%", margin: "auto" }}
       >
@@ -32,7 +30,11 @@ export function AppBar() {
         </Box>
         {!matches ? (
           <Box display="flex" justifyContent="end" p={1}>
-            <Typography sx={{ color: "white" }} p={3}     fontFamily="PeroBold!important">
+            <Typography
+              sx={{ color: "white" }}
+              p={3}
+              fontFamily="PeroBold!important"
+            >
               {" "}
               <Link
                 href="#home"
@@ -41,7 +43,11 @@ export function AppBar() {
                 Home
               </Link>
             </Typography>
-            <Typography sx={{ color: "white" }} p={3}     fontFamily="PeroBold!important">
+            <Typography
+              sx={{ color: "white" }}
+              p={3}
+              fontFamily="PeroBold!important"
+            >
               {" "}
               <Link
                 href="#abouts"
@@ -50,7 +56,12 @@ export function AppBar() {
                 About
               </Link>
             </Typography>
-            <Typography sx={{ color: "white" }} p={3} onClick={()=>setStepNumber(1)}     fontFamily="PeroBold!important">
+            <Typography
+              sx={{ color: "white" }}
+              p={3}
+              onClick={() => setStepNumber(1)}
+              fontFamily="PeroBold!important"
+            >
               {" "}
               <Link
                 href="#biographySkillEducation"
@@ -59,8 +70,12 @@ export function AppBar() {
                 Skills
               </Link>
             </Typography>
-         
-            <Typography sx={{ color: "white" }} p={3}     fontFamily="PeroBold!important">
+
+            <Typography
+              sx={{ color: "white" }}
+              p={3}
+              fontFamily="PeroBold!important"
+            >
               {" "}
               <Link
                 href="#portfolios"
@@ -69,7 +84,11 @@ export function AppBar() {
                 Portfolio
               </Link>
             </Typography>
-            <Typography sx={{ color: "white" }} p={3}     fontFamily="PeroBold!important">
+            <Typography
+              sx={{ color: "white" }}
+              p={3}
+              fontFamily="PeroBold!important"
+            >
               {" "}
               <Link
                 href="#blogs"
@@ -78,7 +97,11 @@ export function AppBar() {
                 Blogs
               </Link>
             </Typography>
-            <Typography sx={{ color: "white" }} p={3}     fontFamily="PeroBold!important">
+            <Typography
+              sx={{ color: "white" }}
+              p={3}
+              fontFamily="PeroBold!important"
+            >
               {" "}
               <Link
                 href="#contacts"
@@ -89,7 +112,9 @@ export function AppBar() {
             </Typography>
           </Box>
         ) : (
-          <Box sx={{ display: "flex", alignItems: "center",marginRight:'40px' }}>
+          <Box
+            sx={{ display: "flex", alignItems: "center", marginRight: "40px" }}
+          >
             {" "}
             <RiArchiveDrawerFill onClick={() => setIsOpen(true)} />
           </Box>

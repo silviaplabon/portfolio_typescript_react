@@ -30,8 +30,9 @@ const useStyles = makeStyles({
   },
   read_more_arrow_icon: {
     marginLeft: "2rem",
-    color: "orange",
+    color: "#ff014f",
     fontSize: "20px",
+    
   },
 });
 
@@ -46,7 +47,9 @@ export function BlogCard({ blog }: BlogCardProps) {
   return (
     <Card sx={{ padding: "0.6rem" }}>
       <CardContent>
-        <Typography mb={1} fontFamily="PeroBold">{blog.published_date}</Typography>
+        <Typography mb={1} fontFamily="PeroBold">
+          {blog.published_date}
+        </Typography>
         <Typography
           mb={0}
           className={classes.card_title}
@@ -78,7 +81,7 @@ export function BlogCard({ blog }: BlogCardProps) {
             Read More
           </Typography>
           <BsFillArrowRightCircleFill
-            onClick={() => redirectToBlog(blog.link)}
+           onClick={() => redirectToBlog(blog.link)}
             className={classes.read_more_arrow_icon}
           ></BsFillArrowRightCircleFill>
         </Box>
