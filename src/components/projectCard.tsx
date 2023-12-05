@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import { Project } from "../common/types";
 import { makeStyles } from "@mui/styles";
 import { ImCross } from "react-icons/im";
+import { motion } from "framer-motion";
 import {
   Box,
   IconButton,
@@ -87,19 +88,21 @@ export function ProjectCard({ project }: ProjectCardProps) {
             alignItems: "center",
           }}
         >
-          <CardMedia
-            className={classes.card_media}
-            component="img"
-            height="230"
-            sx={{
-              borderRadius: "10px",
-              width: "90%",
-              margin: "auto",
-              boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
-            }}
-            src={project.imageUrl}
-            alt="blog image"
-          />
+          <motion.div whileHover={{ scale: 1.15 }} whileTap={{ scale: 0.9 }}>
+            <CardMedia
+              className={classes.card_media}
+              component="img"
+              height="230"
+              sx={{
+                borderRadius: "10px",
+                width: "90%",
+                margin: "auto",
+                boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+              }}
+              src={project.imageUrl}
+              alt="blog image"
+            />
+          </motion.div>
         </Box>
         <Typography
           mb={1}
@@ -119,28 +122,33 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <Box display="flex" justifyContent="space-between">
           <Box display="flex" alignItems="end">
             <Typography
-              sx={{ fontWeight: "bold", cursor: "pointer" ,fontSize:matchesSmall?'11px':'15px'}}
+              sx={{
+                fontWeight: "bold",
+                cursor: "pointer",
+                fontSize: matchesSmall ? "11px" : "15px",
+              }}
               onClick={() => handleOpen()}
               fontFamily="PeroBold"
             >
               View Projects
             </Typography>
           </Box>
-
-          <CardMedia
-            className={classes.card_media}
-            component="img"
-            sx={{
-              borderRadius: "10px",
-              width: "150px",
-              height: "80px",
-              objectFit: "contain",
-            }}
-            src={
-              "https://luique.bslthemes.com/wp-content/uploads/2022/09/pat-2.png"
-            }
-            alt="blog image"
-          />
+          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+            <CardMedia
+              className={classes.card_media}
+              component="img"
+              sx={{
+                borderRadius: "10px",
+                width: "150px",
+                height: "80px",
+                objectFit: "contain",
+              }}
+              src={
+                "https://luique.bslthemes.com/wp-content/uploads/2022/09/pat-2.png"
+              }
+              alt="blog image"
+            />
+          </motion.div>
         </Box>
       </CardContent>
 

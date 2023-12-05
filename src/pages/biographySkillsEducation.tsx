@@ -14,7 +14,7 @@ import { EducationCard } from "../components/educationCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { stepNumberAtom } from "../App";
 import { useAtom } from "jotai";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 const useStyles = makeStyles(() => ({
   skillBiographyEducationButton: {
@@ -167,31 +167,33 @@ export function BiographySkillsEducation() {
                           flexDirection="row"
                         >
                           {skillType.skills?.map((skill) => (
-                            <motion.div  whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
-
-                            <Box
-                              sx={{
-                                borderRadius: "10px",
-                                marginRight: "0.5rem",
-                                color: "white!important",
-                                backgroundColor: "#0f172a!important",
-                                height: "50px",
-                                padding: "10px 16px",
-                                display: "flex",
-                                flexDirection: "column",
-                                marginTop: "20px",
-                                alignItems: "center",
-                                justifyContent: "space-between",
-                              }}
+                            <motion.div
+                              whileHover={{ scale: 1.1 }}
+                              whileTap={{ scale: 0.9 }}
                             >
-                              {skill.logo}
-                              <Typography
-                                marginLeft="10px"
-                                fontFamily="PeroRegular"
+                              <Box
+                                sx={{
+                                  borderRadius: "10px",
+                                  marginRight: "0.5rem",
+                                  color: "white!important",
+                                  backgroundColor: "#0f172a!important",
+                                  height: "50px",
+                                  padding: "10px 16px",
+                                  display: "flex",
+                                  flexDirection: "column",
+                                  marginTop: "20px",
+                                  alignItems: "center",
+                                  justifyContent: "space-between",
+                                }}
                               >
-                                {skill.name}
-                              </Typography>
-                            </Box>
+                                {skill.logo}
+                                <Typography
+                                  marginLeft="10px"
+                                  fontFamily="PeroRegular"
+                                >
+                                  {skill.name}
+                                </Typography>
+                              </Box>
                             </motion.div>
                           ))}
                         </Box>

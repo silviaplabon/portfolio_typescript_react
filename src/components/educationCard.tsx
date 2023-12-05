@@ -29,21 +29,24 @@ export function EducationCard() {
               xs={12}
               lg={6}
               paddingLeft={matches ? "5px!important" : "20px"}
-              paddingRight={matches?'0px!important':'10px'}
+              paddingRight={matches ? "0px!important" : "10px"}
             >
-              <TimelineItem sx={{paddingRight:'0px'}} >
+              <TimelineItem sx={{ paddingRight: "0px" }}>
                 <TimelineSeparator>
                   <TimelineDot color="secondary" />
                   <TimelineConnector />
                 </TimelineSeparator>
-                <TimelineContent sx={{paddingRight:'0px'}}>
+                <TimelineContent sx={{ paddingRight: "0px" }}>
                   <Typography
                     fontFamily="PeroBold"
                     fontSize={matches ? "11px" : "17px"}
                   >
                     {degree.title}
                   </Typography>
-                  <Typography fontFamily="PeroRegular" fontSize={matches ? "11px" : "17px"}>
+                  <Typography
+                    fontFamily="PeroRegular"
+                    fontSize={matches ? "11px" : "17px"}
+                  >
                     {degree.institution}
                   </Typography>
                   <Button

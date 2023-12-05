@@ -32,7 +32,6 @@ const useStyles = makeStyles({
     marginLeft: "2rem",
     color: "#ff014f",
     fontSize: "20px",
-    
   },
 });
 
@@ -81,7 +80,7 @@ export function BlogCard({ blog }: BlogCardProps) {
             Read More
           </Typography>
           <BsFillArrowRightCircleFill
-           onClick={() => redirectToBlog(blog.link)}
+            onClick={() => redirectToBlog(blog.link)}
             className={classes.read_more_arrow_icon}
           ></BsFillArrowRightCircleFill>
         </Box>

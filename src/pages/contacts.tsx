@@ -120,14 +120,18 @@ export function Contacts() {
                     maxRows={1}
                     widthPercentage="100%"
                   ></CustomCardInput>
-                  <Box display="flex" justifyContent="space-between" flexDirection={matchesSmall?'column':"row"}>
+                  <Box
+                    display="flex"
+                    justifyContent="space-between"
+                    flexDirection={matchesSmall ? "column" : "row"}
+                  >
                     <CustomCardInput
                       name="email"
                       label="Email*"
                       value={emailInputs.email}
                       handleInputChange={handleInputChange}
                       maxRows={1}
-                      widthPercentage={matchesSmall?'98%':'48%'}
+                      widthPercentage={matchesSmall ? "98%" : "48%"}
                     ></CustomCardInput>
                     <CustomCardInput
                       name="phone"
@@ -135,7 +139,7 @@ export function Contacts() {
                       value={emailInputs.phone}
                       handleInputChange={handleInputChange}
                       maxRows={1}
-                      widthPercentage={matchesSmall?'98%':'48%'}
+                      widthPercentage={matchesSmall ? "98%" : "48%"}
                     ></CustomCardInput>
                   </Box>
                   <CustomCardInput
