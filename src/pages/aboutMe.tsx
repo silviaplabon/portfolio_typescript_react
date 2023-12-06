@@ -3,18 +3,15 @@ import {
   Button,
   CardMedia,
   Grid,
-  Link,
-  List,
-  ListItem,
   Typography,
   useMediaQuery,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import { FaGithubSquare } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaFacebookSquare } from "react-icons/fa";
+
 import { TypeAnimation } from "react-type-animation";
 import "./index.css";
+import { aboutText } from "../common/common";
+import { SocialLinks } from "../components/socialLinks";
 const useStyles = makeStyles({
   positionLogo: {
     height: "40px!important",
@@ -27,7 +24,6 @@ const useStyles = makeStyles({
     zIndex: 1,
   },
   card_subtitle: {
-    // height: "60px",
     fontSize: "14px",
     overflow: "hidden",
     zIndex: 2,
@@ -54,6 +50,21 @@ const useStyles = makeStyles({
     height: "360px",
     position: "relative",
     zIndex: "1",
+  },
+  resumeButton: {
+    borderRadius: 50,
+    marginTop: "20px",
+    zIndex: "3",
+    width: "140px!important",
+    marginLeft: "0rem",
+    color: "white!important",
+    backgroundColor: "#ff014f!important",
+    boxShadow: "0 7px 8px 0 rgba(0, 0, 0, 0.2)",
+    height: "40px",
+    fontFamily: "PeroBold",
+    "& .MuiButton-label": {
+      fontWeight: "500",
+    },
   },
 });
 
@@ -136,13 +147,7 @@ export function AboutMe() {
             className={classes.card_subtitle}
             fontFamily="PeroRegular"
           >
-            I have over 2 years of experience as a software developer, with a
-            focus on frontend and backend development. I am proficient in React,
-            JavaScript, ES6, HTML, CSS, Bootstrap, Material-UI, Redux, SASS,
-            Typescript, and React-Native. I also have sharpen experience with
-            backend development using Node.js and Golang. I am looking forward
-            to contributing to an exciting and fast-moving company, and I feel I
-            can do so with my skill, extensive knowledge, and creativity.
+            {aboutText}
           </Typography>
           <Box display="flex" mt="5">
             <CardMedia
@@ -167,91 +172,14 @@ export function AboutMe() {
           <Button
             variant="contained"
             href="https://drive.google.com/uc?export=download&amp;id=1AIYBvCQ8PllfECtzfjcT7sGaq5ha7S8H"
-            sx={{
-              borderRadius: 50,
-              marginTop: "20px",
-              zIndex: "3",
-              width: "140px!important",
-              marginLeft: "0rem",
-              color: "white!important",
-              backgroundColor: "#ff014f!important",
-              boxShadow: "0 7px 8px 0 rgba(0, 0, 0, 0.2)",
-              height: "40px",
-              fontFamily: "PeroBold",
-              "& .MuiButton-label": {
-                fontWeight: "500",
-              },
-            }}
+            className={classes.resumeButton}
           >
             Resume
           </Button>
         </Grid>
       </Grid>
 
-      <Box
-        display="flex"
-        justifyContent="end"
-        sx={{ position: "absolute", right: "0px", top: "100px", zIndex: 3 }}
-      >
-        <List
-          sx={{
-            width: "40px",
-            bgcolor: "background.paper",
-            marginRight: "5px",
-            marginLeft: "5px",
-            padding: "2px",
-          }}
-        >
-          <ListItem sx={{ padding: "0px" }}>
-            <Link
-              href="https://github.com/silviaplabon"
-              target="_blank"
-              sx={{ padding: "0px!important" }}
-              display="flex"
-              alignItems="flex-end"
-            >
-              <FaGithubSquare
-                color="#ad5c51"
-                size="40"
-                padding="0px!important"
-              />
-            </Link>
-          </ListItem>
-
-          <ListItem sx={{ padding: "0px" }}>
-            <Link
-              href="https://www.linkedin.com/in/silviaplabon"
-              target="_blank"
-              sx={{ padding: "0px!important" }}
-              display="flex"
-              alignItems="flex-end"
-            >
-              <FaLinkedin
-                color="#0072b1"
-                size="40"
-                href=""
-                padding="0px!important"
-              />
-            </Link>
-          </ListItem>
-          <ListItem sx={{ padding: "0px" }}>
-            <Link
-              href="https://www.facebook.com/profile.php?id=100012297911476"
-              target="_blank"
-              sx={{ padding: "0px!important" }}
-              display="flex"
-              alignItems="flex-end"
-            >
-              <FaFacebookSquare
-                color="#3b5998"
-                size="40"
-                href=""
-                padding="0px!important"
-              />
-            </Link>
-          </ListItem>
-        </List>
-      </Box>
+      <SocialLinks></SocialLinks>
     </Box>
   );
 }

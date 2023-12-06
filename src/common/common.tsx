@@ -6,6 +6,7 @@ import {
   Project,
   Skill,
   SkillArea,
+  SocialLink,
 } from "./types";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { FiMapPin } from "react-icons/fi";
@@ -21,7 +22,12 @@ import {
   TbBrandReactNative,
   TbBrandMongodb,
 } from "react-icons/tb";
-import { FaNodeJs } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaGithubSquare,
+  FaLinkedin,
+  FaNodeJs,
+} from "react-icons/fa";
 
 import { GiHeadphones } from "react-icons/gi";
 export const blogs: Blog[] = [
@@ -513,5 +519,31 @@ export const projectsList: Project[] = [
     themeColor: "#cfdfdf",
     projectOverview:
       "MAWAQiF offers the Rechargeable Card as a payment method for parking fees in the Emirate of Abu Dhabi.",
+  },
+];
+export const aboutText: string =
+  "I have over 2 years of experience as a software developer, with a focus on frontend and backend development. I am proficient in React, JavaScript, ES6, HTML, CSS, Bootstrap, Material-UI, Redux, SASS, Typescript, and React-Native. I also have sharpen experience with backend development using Node.js and Golang. I am looking forward to contributing to an exciting and fast-moving company, and I feel I can do so with my skill, extensive knowledge, and creativity.";
+
+export const socialLinks: SocialLink[] = [
+  {
+    link: "https://github.com/silviaplabon",
+    logo: <FaGithubSquare color="#ad5c51" size="40" padding="0px!important" />,
+  },
+  {
+    link: "https://www.linkedin.com/in/silviaplabon",
+    logo: (
+      <FaLinkedin color="#0072b1" size="40" href="" padding="0px!important" />
+    ),
+  },
+  {
+    link: "https://www.facebook.com/profile.php?id=100012297911476",
+    logo: (
+      <FaFacebookSquare
+        color="#3b5998"
+        size="40"
+        href=""
+        padding="0px!important"
+      />
+    ),
   },
 ];

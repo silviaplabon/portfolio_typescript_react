@@ -77,3 +77,8 @@ export type Project = {
   clientWebsite: string;
   projectImages: ProjectImage[];
 };
+
+export type SocialLink = {
+  link: string;
+  logo: JSX.Element;
+};
