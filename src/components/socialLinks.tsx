@@ -11,10 +11,10 @@ export function SocialLinks() {
       <List
         sx={{
           width: "40px",
-          bgcolor: "background.paper",
+          bgcolor: "white",
           marginRight: "5px",
           marginLeft: "5px",
-          padding: "2px",
+          padding: "0px",
         }}
       >
         {socialLinks?.map((socialLink) => (
@@ -25,6 +25,7 @@ export function SocialLinks() {
               sx={{ padding: "0px!important" }}
               display="flex"
               alignItems="flex-end"
+              aria-label={socialLink.name}
             >
               {socialLink.logo}
             </Link>

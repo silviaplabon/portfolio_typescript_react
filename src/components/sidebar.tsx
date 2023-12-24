@@ -12,10 +12,12 @@ import { SiSkillshare } from "react-icons/si";
 import { LiaBlogSolid } from "react-icons/lia";
 import { TbOutlet } from "react-icons/tb";
 import { BiSolidContact } from "react-icons/bi";
+import { FaCertificate } from "react-icons/fa";
 import { MdOutlineCastForEducation } from "react-icons/md";
 import { TbListDetails } from "react-icons/tb";
 import { useAtom } from "jotai";
 import { stepNumberAtom } from "../App";
+import { useLocation } from "react-router-dom";
 
 // import CustomizedSwitch from "./switch";
 interface TemporaryDrawerProps {
@@ -23,8 +25,14 @@ interface TemporaryDrawerProps {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 export function TemporaryDrawer({ isOpen, setIsOpen }: TemporaryDrawerProps) {
+  const location = useLocation();
   const [, setStepNumber] = useAtom(stepNumberAtom);
-
+  const [isHomeUrl, setIsHomeUrl] = React.useState(false);
+  React.useEffect(() => {
+    if (location.pathname == "") {
+      setIsHomeUrl(true);
+    }
+  }, [location]);
   const toggleDrawer =
     () => (event: React.KeyboardEvent | React.MouseEvent) => {
       if (
@@ -52,7 +60,7 @@ export function TemporaryDrawer({ isOpen, setIsOpen }: TemporaryDrawerProps) {
               <Typography sx={{ color: "black" }} p={2}>
                 {" "}
                 <Link
-                  href="#home"
+                  href={isHomeUrl ? "#home" : "/#home"}
                   sx={{
                     textDecoration: "none",
                     color: "black",
@@ -74,7 +82,7 @@ export function TemporaryDrawer({ isOpen, setIsOpen }: TemporaryDrawerProps) {
               <Typography sx={{ color: "black" }} p={2}>
                 {" "}
                 <Link
-                  href="#abouts"
+                  href={isHomeUrl ? "#abouts" : "/#abouts"}
                   sx={{
                     textDecoration: "none",
                     color: "black",
@@ -97,7 +105,7 @@ export function TemporaryDrawer({ isOpen, setIsOpen }: TemporaryDrawerProps) {
               <Typography sx={{ color: "black" }} p={2}>
                 {" "}
                 <Link
-                  href="#portfolios"
+                  href={isHomeUrl ? "#portfolios" : "/#portfolios"}
                   sx={{
                     textDecoration: "none",
                     color: "black",
@@ -119,7 +127,7 @@ export function TemporaryDrawer({ isOpen, setIsOpen }: TemporaryDrawerProps) {
               <Typography sx={{ color: "black" }} p={2}>
                 {" "}
                 <Link
-                  href="#experiences"
+                  href={isHomeUrl ? "#experiences" : "/#experiences"}
                   sx={{
                     textDecoration: "none",
                     color: "black",
@@ -145,7 +153,11 @@ export function TemporaryDrawer({ isOpen, setIsOpen }: TemporaryDrawerProps) {
               <Typography sx={{ color: "black" }} p={2}>
                 {" "}
                 <Link
-                  href="#biographySkillEducation"
+                  href={
+                    isHomeUrl
+                      ? "#biographySkillEducation"
+                      : "/#biographySkillEducation"
+                  }
                   sx={{
                     textDecoration: "none",
                     color: "black",
@@ -171,7 +183,11 @@ export function TemporaryDrawer({ isOpen, setIsOpen }: TemporaryDrawerProps) {
               <Typography sx={{ color: "black" }} p={2}>
                 {" "}
                 <Link
-                  href="#biographySkillEducation"
+                  href={
+                    isHomeUrl
+                      ? "#biographySkillEducation"
+                      : "/#biographySkillEducation"
+                  }
                   sx={{
                     textDecoration: "none",
                     color: "black",
@@ -197,7 +213,11 @@ export function TemporaryDrawer({ isOpen, setIsOpen }: TemporaryDrawerProps) {
               <Typography sx={{ color: "black" }} p={2}>
                 {" "}
                 <Link
-                  href="#biographySkillEducation"
+                  href={
+                    isHomeUrl
+                      ? "#biographySkillEducation"
+                      : "/#biographySkillEducation"
+                  }
                   sx={{
                     textDecoration: "none",
                     color: "black",
@@ -220,7 +240,7 @@ export function TemporaryDrawer({ isOpen, setIsOpen }: TemporaryDrawerProps) {
               <Typography sx={{ color: "black" }} p={2}>
                 {" "}
                 <Link
-                  href="#blogs"
+                  href={isHomeUrl ? "#blogs" : "/#blogs"}
                   sx={{
                     textDecoration: "none",
                     color: "black",
@@ -242,7 +262,7 @@ export function TemporaryDrawer({ isOpen, setIsOpen }: TemporaryDrawerProps) {
               <Typography sx={{ color: "black" }} p={2}>
                 {" "}
                 <Link
-                  href="#contacts"
+                  href={isHomeUrl ? "#contacts" : "/#contacts"}
                   sx={{
                     textDecoration: "none",
                     color: "black",
@@ -256,6 +276,28 @@ export function TemporaryDrawer({ isOpen, setIsOpen }: TemporaryDrawerProps) {
                     fontFamily="PeroBold"
                   >
                     Contact
+                  </Typography>
+                </Link>
+              </Typography>
+            </ListItem>
+            <ListItem key={"certificates"} disablePadding>
+              <Typography sx={{ color: "black" }} p={2}>
+                {" "}
+                <Link
+                  href={isHomeUrl ? "#certificates" : "/#certificates"}
+                  sx={{
+                    textDecoration: "none",
+                    color: "black",
+                    display: "flex",
+                  }}
+                >
+                  <FaCertificate size="25"></FaCertificate>
+                  <Typography
+                    marginLeft="20px"
+                    fontWeight="bold"
+                    fontFamily="PeroBold"
+                  >
+                   Certificates
                   </Typography>
                 </Link>
               </Typography>

@@ -96,6 +96,7 @@ export function Contacts() {
             mb={3}
             fontSize="25px"
             fontFamily="PeroBold"
+            sx={{ color: "#78bcc4!important" }}
           >
             Contact
           </Typography>
@@ -104,7 +105,7 @@ export function Contacts() {
               <Card
                 style={{
                   padding: matches ? "1rem" : "3rem",
-                  backgroundColor: "#001d37",
+                  backgroundColor: "#000113",
                   color: "white",
                 }}
               >
@@ -175,12 +176,21 @@ export function Contacts() {
               </Card>
             </Grid>
 
-            <Grid item xs={12} md={6} display="flex" alignItems="center">
+            <Grid
+              sx={{ padding: "0px" }}
+              item
+              xs={12}
+              md={6}
+              display="flex"
+              alignItems="center"
+              justifyContent="flex-start"
+            >
               <Box
                 display="flex"
-                alignItems="center"
-                justifyContent="center"
+                alignItems="flex-start"
+                justifyContent="flex-start"
                 flexDirection="column"
+                width="100%"
               >
                 {contacts?.map((contact, index) => (
                   <Grid item xs={4} key={index}>

@@ -12,6 +12,7 @@ import { TypeAnimation } from "react-type-animation";
 import "./index.css";
 import { aboutText } from "../common/common";
 import { SocialLinks } from "../components/socialLinks";
+import jobLogo from "../assets/jobLogo.png";
 const useStyles = makeStyles({
   positionLogo: {
     height: "40px!important",
@@ -51,21 +52,6 @@ const useStyles = makeStyles({
     position: "relative",
     zIndex: "1",
   },
-  resumeButton: {
-    borderRadius: 50,
-    marginTop: "20px",
-    zIndex: "3",
-    width: "140px!important",
-    marginLeft: "0rem",
-    color: "white!important",
-    backgroundColor: "#ff014f!important",
-    boxShadow: "0 7px 8px 0 rgba(0, 0, 0, 0.2)",
-    height: "40px",
-    fontFamily: "PeroBold",
-    "& .MuiButton-label": {
-      fontWeight: "500",
-    },
-  },
 });
 
 export function AboutMe() {
@@ -82,14 +68,14 @@ export function AboutMe() {
         id="abouts"
       >
         <Grid item xs={12} sm={12} md={5} paddingTop="0px!important">
-          <Typography variant="h6" fontSize="17px" fontFamily="PeroSemiBold">
+          <Typography variant="h6" fontSize="17px" fontFamily="PeroSemiBold"  sx={{ color: "#edf2f4!important" }}>
             Hello I'm
           </Typography>
           <Typography
             variant="h6"
             fontSize="20px"
             fontFamily="PeroRegular"
-            style={{ marginLeft: matches ? "20px" : "80px" }}
+            style={{ marginLeft: matches ? "20px" : "80px", }}
           >
             SILVIA SATOAR PLABON
           </Typography>
@@ -97,7 +83,9 @@ export function AboutMe() {
             sequence={[
               "MERN Stack Developer",
               1000,
-              "Web App Developer",
+              "React Developer",
+              1000,
+              "Node JS Developer",
               1000,
               "Golang Developer",
               1000,
@@ -137,6 +125,7 @@ export function AboutMe() {
             mt={matchesLarge ? "0!important" : 10}
             mb={matches ? 1 : 5}
             fontFamily="PeroBold"
+            sx={{ color: "#78bcc4!important" }}
           >
             About Me
           </Typography>
@@ -153,11 +142,11 @@ export function AboutMe() {
             <CardMedia
               className={classes.positionLogo}
               component="img"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS21WH-plOQhb5Bb1O7YeGQa5GhaMzgywWfsjrXkYvxnC3kvQBGKIiMT6mkJBuspGpcBcs&usqp=CAU"
+              src={jobLogo}
               alt="blog image"
             />
             <Box>
-              <Typography px={2} fontFamily="PeroBold">
+              <Typography px={2} fontFamily="PeroBold" sx={{color:'#edf2f4!important'}}>
                 Software Engineer
               </Typography>
               <Typography
@@ -172,7 +161,21 @@ export function AboutMe() {
           <Button
             variant="contained"
             href="https://drive.google.com/uc?export=download&amp;id=1AIYBvCQ8PllfECtzfjcT7sGaq5ha7S8H"
-            className={classes.resumeButton}
+            sx={{
+              borderRadius: 50,
+              marginTop: "20px",
+              zIndex: "3",
+              width: "140px!important",
+              marginLeft: "0rem",
+              color: "white!important",
+              backgroundColor: "#ff014f!important",
+              boxShadow: "0 7px 8px 0 rgba(0, 0, 0, 0.2)",
+              height: "40px",
+              fontFamily: "PeroBold",
+              "& .MuiButton-label": {
+                fontWeight: "500",
+              },
+            }}
           >
             Resume
           </Button>

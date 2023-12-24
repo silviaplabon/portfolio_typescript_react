@@ -33,6 +33,7 @@ export function Portfolios() {
           mt={6}
           mb={3}
           fontSize="25px"
+          sx={{ color: "#78bcc4!important" }}
           fontFamily="PeroBold"
         >
           My Creative Portfolio Section
@@ -107,7 +108,7 @@ export function Portfolios() {
         </Box>
         <Grid container spacing={5} sx={{ marginTop: "60px" }}>
           {projects?.map((project) => (
-            <Grid item xs={12} lg={4} xl={3}>
+            <Grid item xs={12} md={6} lg={4} xl={3}>
               <ProjectCard project={project}></ProjectCard>
             </Grid>
           ))}

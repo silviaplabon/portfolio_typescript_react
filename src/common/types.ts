@@ -81,4 +81,14 @@ export type Project = {
 export type SocialLink = {
   link: string;
   logo: JSX.Element;
+  name: string;
+};
+
+export type CertificateOrAcheivement = {
+  link: string;
+  name: string;
+  subtitle: string;
+  type: string;
+  credentialId: string;
+  credentialLink: string;
 };

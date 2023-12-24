@@ -28,24 +28,25 @@ export function CustomCardInput({
         padding: "0",
         color: "white",
         width: widthPercentage,
-        fontFamily: "PeroSemiBold",
+        fontFamily: "PeroSemiBold!important",
         "& .MuiFormControl-root": {
           backgroundColor: "#001229!important",
           padding: "0px!important",
+          fontFamily: "PeroSemiBold!important",
           width: "100%!important",
         },
         "& .MuiOutlinedInput-notchedOutline": {
           fontFamily: "PeroSemiBold!important",
         },
         "& .MuiOutlinedInput-input": {
-          fontFamily: "PeroSemiBold",
-          color: "white",
+          fontFamily: "PeroSemiBold!important",
+          color: "white!important",
         },
         "& .MuiOutlinedInput-multiline": {
           padding: "0px",
         },
         "& .MuiInputLabel-root": {
-          color: "white",
+          color: "white!important",
         },
       }}
     >

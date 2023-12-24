@@ -3,7 +3,13 @@ import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import { makeStyles } from "@mui/styles";
 
-import { Box, Button, CardContent, useMediaQuery } from "@mui/material";
+import {
+  Box,
+  Button,
+  CardContent,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import { Experience } from "../common/types";
 
 const useStyles = makeStyles({
@@ -22,6 +28,7 @@ interface ExperienceCardProps {
 }
 export function ExperienceCard({ experience }: ExperienceCardProps) {
   const classes = useStyles();
+  const theme = useTheme();
   const matches = useMediaQuery("(max-width:1200px)");
 
   return (
@@ -38,14 +45,14 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
         sx={{
           padding: "0.6rem",
           width: matches ? "100%" : "80%",
-          backgroundColor: "#162032",
+          backgroundColor: theme.palette.secondary.main,
         }}
       >
         <CardContent>
           <Typography
             mb={1}
             fontFamily="PeroBold"
-            sx={{ fontWeight: "bold", fontSize: "18px", color: "white" }}
+            sx={{ fontWeight: "bold", fontSize: "18px", color: "#edf2f4!important" }}
           >
             {experience.position}
           </Typography>
@@ -60,7 +67,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
           <Typography
             mb={0}
             className={classes.card_title}
-            sx={{ color: "white", fontSize: "12px" }}
+            sx={{  fontSize: "12px",color: "#edf2f4!important" }}
             fontFamily="PeroBold"
           >
             {experience.employmentTime}
@@ -83,7 +90,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
                   marginTop: "0.7rem",
                   color: "white!important",
                   border: "1px solid black",
-                  backgroundColor: "#0f172a!important",
+                  backgroundColor: "#000113!important",
                   height: "40px",
                   "& .MuiButton-label": {
                     fontWeight: "500",

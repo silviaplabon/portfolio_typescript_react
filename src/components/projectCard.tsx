@@ -88,27 +88,27 @@ export function ProjectCard({ project }: ProjectCardProps) {
             alignItems: "center",
           }}
         >
-          <motion.div whileHover={{ scale: 1.15 }} whileTap={{ scale: 0.9 }}>
-            <CardMedia
-              className={classes.card_media}
-              component="img"
-              height="230"
-              sx={{
-                borderRadius: "10px",
-                width: "90%",
-                margin: "auto",
-                boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
-              }}
-              src={project.imageUrl}
-              alt="blog image"
-            />
-          </motion.div>
+          {/* <motion.div whileHover={{ scale: 1.15 }} whileTap={{ scale: 0.9 }}> */}
+          <CardMedia
+            className={classes.card_media}
+            component="img"
+            height="230"
+            sx={{
+              borderRadius: "10px",
+              width: "90%",
+              margin: "auto",
+              boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+            }}
+            src={project.imageUrl}
+            alt="blog image"
+          />
+          {/* </motion.div> */}
         </Box>
         <Typography
           mb={1}
           marginTop="20px"
           fontFamily="PeroBold"
-          sx={{ fontWeight: "bold" }}
+          sx={{ fontWeight: "bold"}}
         >
           {project.projectName}
         </Typography>
@@ -123,9 +123,14 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <Box display="flex" alignItems="end">
             <Typography
               sx={{
+                color: "#ff014f!important",
                 fontWeight: "bold",
                 cursor: "pointer",
                 fontSize: matchesSmall ? "11px" : "15px",
+                transition: 'color 0.3s ease-in-out', 
+                ":hover": {
+                  color:"black!important",
+                },
               }}
               onClick={() => handleOpen()}
               fontFamily="PeroBold"

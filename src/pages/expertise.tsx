@@ -14,10 +14,11 @@ export function Expertise() {
           mb={3}
           fontSize="25px"
           fontFamily="PeroBold"
+          sx={{ color: "#78bcc4!important" }}
         >
           My Expertise
         </Typography>
-        <Typography
+        {/* <Typography
           variant="h6"
           align="center"
           mb={1}
@@ -25,7 +26,7 @@ export function Expertise() {
           fontFamily="PeroBold"
         >
           What I Do
-        </Typography>
+        </Typography> */}
         <Grid container>
           {skillsArea?.map((area, index) => (
             <Grid item xs={12} sm={6} lg={3}>

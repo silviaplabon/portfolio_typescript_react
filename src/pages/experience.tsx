@@ -14,10 +14,11 @@ export function Experience() {
           mb={1}
           fontSize="25px"
           fontFamily="PeroBold"
+          sx={{ color: "#78bcc4!important" }}
         >
           My Experience
         </Typography>
-        <Typography
+        {/* <Typography
           variant="h6"
           align="center"
           mb={1}
@@ -25,7 +26,7 @@ export function Experience() {
           fontFamily="PeroBold"
         >
           What I Have
-        </Typography>
+        </Typography> */}
         <Grid container sx={{ width: "100%", margin: "auto" }}>
           <Grid
             item

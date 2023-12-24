@@ -7,7 +7,6 @@ const useStyles = makeStyles(() => ({
     borderRadius: "10px",
     marginRight: "0.5rem",
     color: "white!important",
-    backgroundColor: "#0f172a!important",
     height: "50px",
     padding: "10px 16px",
     display: "flex",
@@ -45,9 +44,9 @@ export function SkillsCard() {
                   sx={{
                     fontWeight: "bold",
                     fontSize: "15px",
-                    color: "white",
+                    color: "white"
                   }}
-                  fontFamily="PeroRegular"
+                  fontFamily="PeroBold"
                 >
                   {skillType.title}
                 </Typography>
@@ -71,8 +70,13 @@ export function SkillsCard() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
-                    <Box className={classes.skillBox}>
-                      {skill.logo}
+                    <Box
+                      className={classes.skillBox}
+                      sx={{ backgroundColor: "#2d3032" }}
+                    >
+                      <Box sx={{ width: "30px", height: "30px" }}>
+                        {skill.logo}
+                      </Box>
                       <Typography marginLeft="10px" fontFamily="PeroRegular">
                         {skill.name}
                       </Typography>

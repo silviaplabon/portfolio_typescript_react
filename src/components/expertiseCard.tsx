@@ -9,6 +9,7 @@ const useStyles = makeStyles({
     borderRadius: "0.675rem",
   },
   card_subtitle: {
+    marginTop: "10px",
     overflow: "hidden",
     color: "white!important",
     display: "-webkit-box",
@@ -17,11 +18,11 @@ const useStyles = makeStyles({
     "-webkit-box-orient": "vertical",
   },
   card_title: {
-    height: "50px",
+    height: "40px",
     overflow: "hidden",
     display: "-webkit-box",
     textOverflow: "ellipsis",
-    "-webkit-line-clamp": "2!important",
+    "-webkit-line-clamp": "1!important",
     "-webkit-box-orient": "vertical",
   },
   read_more_arrow_icon: {
@@ -50,7 +51,8 @@ export function ExpertiseCard({ data }: ExpertiseCardProps) {
       <Typography
         className={classes.card_title}
         mt={2}
-        sx={{ fontWeight: "bold", color: "white" }}
+        sx={{ fontWeight: "bold", color: "#edf2f4!important" }}
+
       >
         {data.name}
       </Typography>

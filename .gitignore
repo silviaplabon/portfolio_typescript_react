@@ -24,3 +24,6 @@ firebase.ts
 *.sw?
 .vercel
 .yarn/
+*.cache
+.firebase/hosting.ZGlzdA.cache
+src/.env

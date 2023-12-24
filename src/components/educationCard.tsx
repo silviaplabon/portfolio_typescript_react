@@ -33,13 +33,14 @@ export function EducationCard() {
             >
               <TimelineItem sx={{ paddingRight: "0px" }}>
                 <TimelineSeparator>
-                  <TimelineDot color="secondary" />
+                  <TimelineDot sx={{color:'#ff014f!important'}} />
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent sx={{ paddingRight: "0px" }}>
                   <Typography
                     fontFamily="PeroBold"
                     fontSize={matches ? "11px" : "17px"}
+                    sx={{color: "#edf2f4!important"}}
                   >
                     {degree.title}
                   </Typography>

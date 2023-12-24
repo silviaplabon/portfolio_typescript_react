@@ -6,6 +6,10 @@
     font-family: "PeroRegular";
     src: url("./assets/Pero/PeroRegular.otf") format("opentype");
 }
+@font-face {
+    font-family: "PeroSemiBold";
+    src: url("./assets/Pero/PeroSemiBold.otf") format("opentype");
+}
   
 p{
     font-family: 'PeroRegular';

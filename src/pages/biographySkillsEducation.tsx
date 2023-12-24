@@ -31,7 +31,7 @@ const useStyles = makeStyles(() => ({
     fontSize: "17px!important",
     fontWeight: "bold!important",
     color: "white!important",
-    backgroundColor: "#637d8d!important",
+    backgroundColor: "#2d3032!important",
     borderRadius: "100px!important",
   },
   selectedButton: {
@@ -43,7 +43,6 @@ const useStyles = makeStyles(() => ({
 
 export function BiographySkillsEducation() {
   const classes = useStyles();
-
   const matches = useMediaQuery("(max-width:1200px)");
   const [stepNumber, setStepNumber] = useAtom(stepNumberAtom);
 
@@ -54,9 +53,7 @@ export function BiographySkillsEducation() {
           <Box
             className={classes.skillBiographyEducationButton}
             sx={{
-              backgroundColor: !matches
-                ? "#637d8d!important"
-                : "#0f172a!important",
+              backgroundColor: !matches ? "#2d3032" : "#0f172a!important",
             }}
           >
             <Grid
@@ -75,7 +72,7 @@ export function BiographySkillsEducation() {
                   }
                   onClick={() => setStepNumber(1)}
                 >
-                  <Typography fontFamily="PeroBold">SKILLS—1</Typography>
+                  <Typography fontFamily="PeroBold">SKILLS</Typography>
                 </Button>
               </Grid>
               <Grid item xs={12} sm={4} paddingTop="10px!important">
@@ -88,7 +85,7 @@ export function BiographySkillsEducation() {
                   }
                   onClick={() => setStepNumber(2)}
                 >
-                  <Typography fontFamily="PeroBold">EDUCATION—2</Typography>
+                  <Typography fontFamily="PeroBold">EDUCATION</Typography>
                 </Button>
               </Grid>
               <Grid item xs={12} sm={4} paddingTop="10px!important">
@@ -101,7 +98,7 @@ export function BiographySkillsEducation() {
                   }
                   onClick={() => setStepNumber(3)}
                 >
-                  <Typography fontFamily="PeroBold">BIOGRAPHY—3</Typography>
+                  <Typography fontFamily="PeroBold">BIOGRAPHY</Typography>
                 </Button>
               </Grid>
             </Grid>
@@ -111,7 +108,7 @@ export function BiographySkillsEducation() {
               border: "1px solid white",
               padding: "10px",
               marginTop: "10px",
-              backgroundColor: "#162032",
+      backgroundColor: "#0f172a",
             }}
           >
             <CardContent>
