@@ -28,7 +28,9 @@ export function BiographyCard() {
           justifyContent="space-between"
           className={classes.biographyCol}
         >
-          <Typography fontFamily="PeroBold" sx={{color: "#edf2f4!important"}}>Name</Typography>
+          <Typography fontFamily="PeroBold" sx={{ color: "#edf2f4!important" }}>
+            Name
+          </Typography>
           <Typography fontFamily="PeroRegular">{Biography.name}</Typography>
         </Box>
       </Grid>
@@ -39,7 +41,9 @@ export function BiographyCard() {
           justifyContent="space-between"
           className={classes.biographyCol}
         >
-          <Typography fontFamily="PeroBold" sx={{color: "#edf2f4!important"}}>Age</Typography>
+          <Typography fontFamily="PeroBold" sx={{ color: "#edf2f4!important" }}>
+            Age
+          </Typography>
           <Typography fontFamily="PeroRegular">{getAge()}</Typography>
         </Box>
       </Grid>
@@ -50,7 +54,9 @@ export function BiographyCard() {
           justifyContent="space-between"
           className={classes.biographyCol}
         >
-          <Typography fontFamily="PeroBold" sx={{color: "#edf2f4!important"}}>Email</Typography>
+          <Typography fontFamily="PeroBold" sx={{ color: "#edf2f4!important" }}>
+            Email
+          </Typography>
           <Typography fontFamily="PeroRegular">{Biography.email}</Typography>
         </Box>
       </Grid>
@@ -61,7 +67,9 @@ export function BiographyCard() {
           justifyContent="space-between"
           className={classes.biographyCol}
         >
-          <Typography fontFamily="PeroBold" sx={{color: "#edf2f4!important"}}>Birthday</Typography>
+          <Typography fontFamily="PeroBold" sx={{ color: "#edf2f4!important" }}>
+            Birthday
+          </Typography>
           <Typography fontFamily="PeroRegular">{Biography.birthday}</Typography>
         </Box>
       </Grid>
@@ -72,7 +80,9 @@ export function BiographyCard() {
           justifyContent="space-between"
           className={isMobile ? classes.biographyCol : ""}
         >
-          <Typography fontFamily="PeroBold" sx={{color: "#edf2f4!important"}}>Phone</Typography>
+          <Typography fontFamily="PeroBold" sx={{ color: "#edf2f4!important" }}>
+            Phone
+          </Typography>
           <Typography fontFamily="PeroRegular">{Biography.phone}</Typography>
         </Box>
       </Grid>
@@ -83,7 +93,9 @@ export function BiographyCard() {
           justifyContent="space-between"
           //   className={classes.biographyCol}
         >
-          <Typography fontFamily="PeroBold" sx={{color: "#edf2f4!important"}}>Address</Typography>
+          <Typography fontFamily="PeroBold" sx={{ color: "#edf2f4!important" }}>
+            Address
+          </Typography>
           <Typography fontFamily="PeroRegular">{Biography.address}</Typography>
         </Box>
       </Grid>

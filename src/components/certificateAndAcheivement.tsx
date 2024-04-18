@@ -80,7 +80,7 @@ export function CertificateAndAcheivement({
           <Typography
             mb={2}
             className={classes.card_title}
-            sx={{ fontWeight: "bold", }}
+            sx={{ fontWeight: "bold" }}
             fontFamily="PeroBold"
           >
             {data.name}

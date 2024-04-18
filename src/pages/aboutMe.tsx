@@ -68,14 +68,19 @@ export function AboutMe() {
         id="abouts"
       >
         <Grid item xs={12} sm={12} md={5} paddingTop="0px!important">
-          <Typography variant="h6" fontSize="17px" fontFamily="PeroSemiBold"  sx={{ color: "#edf2f4!important" }}>
+          <Typography
+            variant="h6"
+            fontSize="17px"
+            fontFamily="PeroSemiBold"
+            sx={{ color: "#edf2f4!important" }}
+          >
             Hello I'm
           </Typography>
           <Typography
             variant="h6"
             fontSize="20px"
             fontFamily="PeroRegular"
-            style={{ marginLeft: matches ? "20px" : "80px", }}
+            style={{ marginLeft: matches ? "20px" : "80px" }}
           >
             SILVIA SATOAR PLABON
           </Typography>
@@ -146,7 +151,11 @@ export function AboutMe() {
               alt="blog image"
             />
             <Box>
-              <Typography px={2} fontFamily="PeroBold" sx={{color:'#edf2f4!important'}}>
+              <Typography
+                px={2}
+                fontFamily="PeroBold"
+                sx={{ color: "#edf2f4!important" }}
+              >
                 Software Engineer
               </Typography>
               <Typography
@@ -154,7 +163,7 @@ export function AboutMe() {
                 sx={{ fontSize: "12px" }}
                 fontFamily="PeroRegular"
               >
-                Profecia Links Consulting Private LTD
+                Profecia Links Consulting Private LTD, Dubai
               </Typography>
             </Box>
           </Box>
@@ -176,6 +185,7 @@ export function AboutMe() {
                 fontWeight: "500",
               },
             }}
+            id="resumeButton"
           >
             Resume
           </Button>

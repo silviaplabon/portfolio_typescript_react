@@ -52,7 +52,6 @@ export function ExpertiseCard({ data }: ExpertiseCardProps) {
         className={classes.card_title}
         mt={2}
         sx={{ fontWeight: "bold", color: "#edf2f4!important" }}
-
       >
         {data.name}
       </Typography>

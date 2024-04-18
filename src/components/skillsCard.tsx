@@ -1,4 +1,11 @@
-import { Box, CardMedia, Grid, Typography, useMediaQuery } from "@mui/material";
+import {
+  Box,
+  CardMedia,
+  Grid,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import { Skills } from "../common/common";
 import { motion } from "framer-motion";
 import { makeStyles } from "@mui/styles";
@@ -19,7 +26,7 @@ const useStyles = makeStyles(() => ({
 
 export function SkillsCard() {
   const classes = useStyles();
-
+  const theme = useTheme();
   const matches = useMediaQuery("(max-width:1200px)");
   return (
     <>
@@ -44,7 +51,7 @@ export function SkillsCard() {
                   sx={{
                     fontWeight: "bold",
                     fontSize: "15px",
-                    color: "white"
+                    color: "white",
                   }}
                   fontFamily="PeroBold"
                 >
@@ -72,7 +79,7 @@ export function SkillsCard() {
                   >
                     <Box
                       className={classes.skillBox}
-                      sx={{ backgroundColor: "#2d3032" }}
+                      sx={{ backgroundColor: theme.palette.secondary.main }}
                     >
                       <Box sx={{ width: "30px", height: "30px" }}>
                         {skill.logo}

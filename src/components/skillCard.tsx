@@ -74,8 +74,7 @@ export function SkillCard({ experience }: ExperienceCardProps) {
                   marginRight: "0.2rem",
                   marginTop: "0.7rem",
                   color: "black!important",
-                  border: "1px solid black",
-                  backgroundColor: "gray!important",
+                  backgroundColor: "#17223f!important",
                   height: "40px",
                   "& .MuiButton-label": {
                     fontWeight: "500",

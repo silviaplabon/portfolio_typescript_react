@@ -58,7 +58,10 @@ export function BlogsCard({ showAll }: BlogsCardProps) {
                 },
                 fontFamily: "PeroBold",
               }}
-              onClick={() => navigate("/blogs")}
+              onClick={() => {
+                window.scrollTo(0, 0);
+                navigate("/blogs");
+              }}
             >
               View More
             </Button>

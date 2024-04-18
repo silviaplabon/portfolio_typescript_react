@@ -5,6 +5,7 @@ import {
   CardContent,
   Grid,
   Typography,
+  useTheme,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { BiographyCard } from "../components/biography";
@@ -31,13 +32,11 @@ const useStyles = makeStyles(() => ({
     fontSize: "17px!important",
     fontWeight: "bold!important",
     color: "white!important",
-    backgroundColor: "#2d3032!important",
     borderRadius: "100px!important",
   },
   selectedButton: {
     borderRadius: "100px!important",
     border: "0px!important",
-    backgroundColor: "#ff014f!important",
   },
 }));
 
@@ -45,7 +44,7 @@ export function BiographySkillsEducation() {
   const classes = useStyles();
   const matches = useMediaQuery("(max-width:1200px)");
   const [stepNumber, setStepNumber] = useAtom(stepNumberAtom);
-
+  const theme = useTheme();
   return (
     <Box sx={{ marginTop: "50px" }} id="biographySkillEducation">
       <Box display="flex" flexDirection="column" sx={{ marginTop: "2rem" }}>
@@ -53,7 +52,9 @@ export function BiographySkillsEducation() {
           <Box
             className={classes.skillBiographyEducationButton}
             sx={{
-              backgroundColor: !matches ? "#2d3032" : "#0f172a!important",
+              backgroundColor: !matches
+                ? theme.palette.secondary.main
+                : "#0f172a!important",
             }}
           >
             <Grid
@@ -70,6 +71,12 @@ export function BiographySkillsEducation() {
                       ? `${classes.button} ${classes.selectedButton}`
                       : classes.button
                   }
+                  sx={{
+                    backgroundColor:
+                      stepNumber !== 1
+                        ? theme.palette.secondary.main
+                        : "#ff014f!important",
+                  }}
                   onClick={() => setStepNumber(1)}
                 >
                   <Typography fontFamily="PeroBold">SKILLS</Typography>
@@ -83,6 +90,12 @@ export function BiographySkillsEducation() {
                       ? `${classes.button} ${classes.selectedButton}`
                       : classes.button
                   }
+                  sx={{
+                    backgroundColor:
+                      stepNumber !== 2
+                        ? theme.palette.secondary.main
+                        : "#ff014f!important",
+                  }}
                   onClick={() => setStepNumber(2)}
                 >
                   <Typography fontFamily="PeroBold">EDUCATION</Typography>
@@ -96,6 +109,12 @@ export function BiographySkillsEducation() {
                       ? `${classes.button} ${classes.selectedButton}`
                       : classes.button
                   }
+                  sx={{
+                    backgroundColor:
+                      stepNumber !== 3
+                        ? theme.palette.secondary.main
+                        : "#ff014f!important",
+                  }}
                   onClick={() => setStepNumber(3)}
                 >
                   <Typography fontFamily="PeroBold">BIOGRAPHY</Typography>
@@ -108,7 +127,7 @@ export function BiographySkillsEducation() {
               border: "1px solid white",
               padding: "10px",
               marginTop: "10px",
-      backgroundColor: "#0f172a",
+              backgroundColor: "#0f172a",
             }}
           >
             <CardContent>

@@ -50,7 +50,7 @@ export function Experience() {
               sx={{ fontSize: "12px", fontWeight: "500" }}
               fontFamily="PeroRegular"
             >
-              Profecia Links Consulting Private LTD
+              Profecia Links Consulting Private LTD, Dubai
             </Typography>
             <Typography px={2} fontFamily="PeroRegular">
               I've harnessed the power of Node.js and Golang to create robust

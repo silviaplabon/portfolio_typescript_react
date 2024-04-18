@@ -12,7 +12,7 @@ export const stepNumberAtom = atom(1);
 const theme = createTheme({
   palette: {
     secondary: {
-      main: "#1f2833",
+      main: "#0b111f",
     },
     primary: {
       main: "#0f172a",

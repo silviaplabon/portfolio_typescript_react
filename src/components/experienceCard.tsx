@@ -52,7 +52,11 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
           <Typography
             mb={1}
             fontFamily="PeroBold"
-            sx={{ fontWeight: "bold", fontSize: "18px", color: "#edf2f4!important" }}
+            sx={{
+              fontWeight: "bold",
+              fontSize: "18px",
+              color: "#edf2f4!important",
+            }}
           >
             {experience.position}
           </Typography>
@@ -67,7 +71,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
           <Typography
             mb={0}
             className={classes.card_title}
-            sx={{  fontSize: "12px",color: "#edf2f4!important" }}
+            sx={{ fontSize: "12px", color: "#edf2f4!important" }}
             fontFamily="PeroBold"
           >
             {experience.employmentTime}

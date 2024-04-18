@@ -297,7 +297,7 @@ export function TemporaryDrawer({ isOpen, setIsOpen }: TemporaryDrawerProps) {
                     fontWeight="bold"
                     fontFamily="PeroBold"
                   >
-                   Certificates
+                    Certificates
                   </Typography>
                 </Link>
               </Typography>

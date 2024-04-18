@@ -20,10 +20,11 @@ import { DiCss3, DiFirebase } from "react-icons/di";
 import { FaBootstrap } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import jsImage from "../assets/js.jpg";
-import ScicImage from "../assets/Scic_Silvia_Satoar_Plabon.jpg";
+// import ScicImage from "../assets/Scic_Silvia_Satoar_Plabon.jpg";
 import ScicRecommendation from "../assets/SCICRecommendation.jpg";
 import BlogReactImage from "../assets/blogReact.jpg";
 import FullStackJsCourse from "../assets/fullStackJsCourse.jpg";
+import { AiOutlineConsoleSql } from "react-icons/ai";
 import {
   TbBrandGolang,
   TbBrandReactNative,
@@ -43,6 +44,7 @@ import ReactExperienceImage from "../assets/reactExperienceImage.jpg";
 import NodeExperienceImage from "../assets/nodejs-experience.jpg";
 import GolangExperienceImage from "../assets/golangExperience.jpg";
 import SoftwareExperienceImage from "../assets/softwareEngineeringExperience.jpg";
+import ToraniWebsite from "../assets/torani_website.jpg"
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const blogs: Blog[] = [
@@ -157,7 +159,7 @@ export const contacts: Contact[] = [
 // eslint-disable-next-line react-refresh/only-export-components
 export const experiences: Experience[] = [
   {
-    company: "Profecia Links Consulting Private LTD",
+    company: "Profecia Links Consulting Private LTD, Dubai",
     employmentTime: "Aug 2021- Present",
     description:
       "Building websites with React, and Redux.Implementing APIs with secure techniques using Node.js and Golang. Working independently with minimal supervision, analyzing and troubleshooting issues, and interacting with the team. Standardized all output with a new, responsive, and mobile-first approach, and enhanced the quality of code and improved application performance, leading to a reduction in bugs. ",
@@ -172,6 +174,7 @@ export const experiences: Experience[] = [
       "Tailwind",
       "Bootstrap",
       "SCSS",
+      "SQL"
     ],
     position: "Software Engineer",
   },
@@ -248,6 +251,11 @@ export const Skills: Skill[] = [
         name: "Firestore",
         logo: <DiFirebase size="30"></DiFirebase>,
       },
+      {
+        name: "SQL",
+        logo: <AiOutlineConsoleSql size="30"></AiOutlineConsoleSql>,
+      },
+   
     ],
   },
   {
@@ -299,6 +307,55 @@ export const DegreeList: Education[] = [
 ];
 // eslint-disable-next-line react-refresh/only-export-components
 export const projectsList: Project[] = [
+  {
+    typeOfContent: "all_website_backend",
+    projectName: "TORANI",
+    clientName: "TORANI",
+    clientAddress: "South San Francisco, California, United States",
+    projectYear: "2024",
+    projectType: "SYRUP WEBSITE",
+    clientWebsite: "torani.com",
+    description:"For business growth, particularly within the flavored syrup and beverage industry at Torani in the USA, utilized SQL queries in Google BigQuery and Snowflake to analyze website performance, track conversion metrics, and optimize advertising efforts, driving actionable insights.",
+    performedTasks: [
+      {
+        technologies: "SQL-NODEJS",
+        tasks: [
+          "Spearheaded the analysis and optimization of key performance metrics essential to business operations.",
+          "Utilized expertise in SQL queries within Google BigQuery and Snowflake for efficient data processing.",
+          "Extracted and analyzed website performance metrics like unique visitors, repeat visitors, sessions, and engagement duration to understand user behavior.",
+          "Tracked conversion-related metrics such as cart abandonment rate and average time to conversion to enhance user experience and increase conversion rates.",
+          "Conducted detailed analysis of revenue and sales metrics, including revenue per customer, customer lifetime value, and average order value, guiding strategic marketing decisions.",
+          "Managed advertising performance metrics across various channels including Amazon, Google, and Bing, optimizing advertising campaigns for maximum ROI.",
+          "Leveraged BigQuery, Snowflake, and SQL to generate actionable insights into marketing effectiveness, website performance, and overall business health.Enabled data-driven decision-making, identification of optimization opportunities, and sustained business growth through data analysis."
+        ],
+      },
+    ],
+    imageUrl: ToraniWebsite,
+
+    projectImages: [
+      {
+        img: "https://i0.wp.com/www.aylishakelley.com/wp-content/uploads/2020/11/AK_Torani_Mixes-Well-Magazine_Ad_1440x1620.jpg?fit=1440%2C1620&ssl=1",
+        title: "Torani Website Image 1",
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6bpubJ43eJn8Fy0PsxyRNGslJf5lIH4KsdgUr6scTnQ&s",
+        title: "Torani Website Image 2",
+      },
+      {
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw99thc439sN_HTrv3tZSxZihRVK1-K_Fuqg&s",
+        title: "Torani Website Image 3",
+      },
+      {
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqZvNXhm2l5Sw8s8uGSyM3A6-ahMybOOPaQQ&s",
+        title: "Torani Website Image 4",
+        cols: 2,
+      },
+    ],
+    themeColor: "#d8392f",
+    projectOverview: "Utilized SQL queries in Google BigQuery and Snowflake to analyze website performance, track conversion metrics, and optimize advertising efforts, driving actionable insights for business growth, particularly within the flavored syrup and beverage industry. Specifically tailored strategies and insights to align with the operations, market dynamics, and product offerings of Torani, a distinguished manufacturer with a legacy of crafting high-quality flavored syrups, sauces, and beverage bases since 1925, catering to cafes, restaurants, and households globally.",
+  },
   {
     typeOfContent: "all_website_frontend",
     projectName: "RETROKIT",
@@ -566,7 +623,7 @@ export const projectsList: Project[] = [
   },
 ];
 export const aboutText: string =
-  "I have over 2 years of experience as a software developer, with a focus on frontend and backend development. I am proficient in React, JavaScript, ES6, HTML, CSS, Bootstrap, Material-UI, Redux, SASS, Typescript, and React-Native. I also have sharpen experience with backend development using Node.js and Golang. I am looking forward to contributing to an exciting and fast-moving company, and I feel I can do so with my skill, extensive knowledge, and creativity.";
+  "I have around 2 years and 9 months of experience as a software developer, with a focus on frontend and backend development. I am proficient in React, JavaScript, ES6, HTML, CSS, Bootstrap, Material-UI, Redux, SASS, Typescript, and React-Native. I also have sharpen experience with backend development using Node.js and Golang. I am looking forward to contributing to an exciting and fast-moving company, and I feel I can do so with my skill, extensive knowledge, and creativity.";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const socialLinks: SocialLink[] = [
@@ -579,6 +636,8 @@ export const socialLinks: SocialLink[] = [
         size="40"
         backgroundColor="white"
         padding="0px!important"
+        id="faGithub"
+        class="faGithub"
       />
     ),
   },
@@ -586,7 +645,8 @@ export const socialLinks: SocialLink[] = [
     name: "Linkedin",
     link: "https://www.linkedin.com/in/silviaplabon",
     logo: (
-      <FaLinkedin color="#0072b1" size="40" href="" padding="0px!important" />
+      <FaLinkedin color="#0072b1" size="40" href="" padding="0px!important"     id="faLinkedIn"
+      class="faLinkedIn"/>
     ),
   },
   {
@@ -598,6 +658,8 @@ export const socialLinks: SocialLink[] = [
         size="40"
         href=""
         padding="0px!important"
+        id="faFacebook"
+        class="faFacebook"
       />
     ),
   },
@@ -633,13 +695,13 @@ export const certificatesAndAcheivements: CertificateOrAcheivement[] = [
     subtitle:
       " I've acquired a diverse skill set encompassing front-end technologies like HTML, CSS, Bootstrap, Javascript, jQuery, Google Fonts, and Font Awesome. On the backend, I've gained a moderate proficiency in Node.js and MongoDB, complemented by a solid understanding of crucial concepts such as REST API, offering me a well-rounded foundation in web development.",
   },
-  {
-    link: ScicImage,
-    name: "Complete Web Development Course with Jhanakar Mahbub",
-    type: "Certificate",
-    credentialId: "",
-    credentialLink: "",
-    subtitle:
-      "Through web development courses, I've acquired a thorough knowledge of creating websites and web applications, delving into crucial topics such as Internet Basics, HTML, CSS, and JavaScript. This learning journey has equipped me with the skills to design and construct functional and visually engaging online platforms.",
-  },
+  // {
+  //   link: ScicImage,
+  //   name: "Complete Web Development Course with Jhanakar Mahbub",
+  //   type: "Certificate",
+  //   credentialId: "",
+  //   credentialLink: "",
+  //   subtitle:
+  //     "Through web development courses, I've acquired a thorough knowledge of creating websites and web applications, delving into crucial topics such as Internet Basics, HTML, CSS, and JavaScript. This learning journey has equipped me with the skills to design and construct functional and visually engaging online platforms.",
+  // },
 ];

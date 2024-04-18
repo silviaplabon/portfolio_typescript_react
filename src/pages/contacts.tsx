@@ -5,6 +5,7 @@ import {
   Typography,
   Button,
   useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import { contacts } from "../common/common";
 import { ContactCard } from "../components/contactCard";
@@ -72,7 +73,7 @@ export function Contacts() {
   };
   const matches = useMediaQuery("(max-width:900px)");
   const matchesSmall = useMediaQuery("(max-width:600px)");
-
+  const theme = useTheme();
   return (
     <>
       <ToastContainer />
@@ -80,7 +81,6 @@ export function Contacts() {
         display="flex"
         flexDirection="column"
         sx={{
-          // backgroundImage: `url('https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBvcnRmb2xpbyUyMGltYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60)`,
           backgroundSize: "cover",
           backgroundPosition: "50%",
           backgrounRepeat: "no-repeat",
@@ -105,7 +105,7 @@ export function Contacts() {
               <Card
                 style={{
                   padding: matches ? "1rem" : "3rem",
-                  backgroundColor: "#000113",
+                  backgroundColor: theme.palette.secondary.main,
                   color: "white",
                 }}
               >

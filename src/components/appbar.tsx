@@ -140,7 +140,6 @@ export function AppBar({ showSidebar }: AppBarProps) {
                 Contact
               </Typography>
             </Link>
-            
           </Box>
         ) : (
           <Box

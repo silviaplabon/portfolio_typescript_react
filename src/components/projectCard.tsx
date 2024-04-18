@@ -108,7 +108,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           mb={1}
           marginTop="20px"
           fontFamily="PeroBold"
-          sx={{ fontWeight: "bold"}}
+          sx={{ fontWeight: "bold" }}
         >
           {project.projectName}
         </Typography>
@@ -123,13 +123,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <Box display="flex" alignItems="end">
             <Typography
               sx={{
-                color: "#ff014f!important",
+                color: "black",
                 fontWeight: "bold",
                 cursor: "pointer",
                 fontSize: matchesSmall ? "11px" : "15px",
-                transition: 'color 0.3s ease-in-out', 
+                transition: "color 0.3s ease-in-out",
                 ":hover": {
-                  color:"black!important",
+                  color: "#ff014f!important",
                 },
               }}
               onClick={() => handleOpen()}
