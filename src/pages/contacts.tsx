@@ -193,7 +193,7 @@ export function Contacts() {
                 width="100%"
               >
                 {contacts?.map((contact, index) => (
-                  <Grid item xs={4} key={index}>
+                  <Grid item xs={12} md={8} key={index}>
                     <ContactCard contact={contact} />
                   </Grid>
                 ))}

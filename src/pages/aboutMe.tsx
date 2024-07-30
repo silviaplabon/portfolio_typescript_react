@@ -12,7 +12,10 @@ import { TypeAnimation } from "react-type-animation";
 import "./index.css";
 import { aboutText } from "../common/common";
 import { SocialLinks } from "../components/socialLinks";
-import jobLogo from "../assets/jobLogo.png";
+// import jobLogo from "../assets/jobLogo.png";
+import damacLogo from "../assets/damacLogo.png";
+import silviaImage from "../assets/silvia-Image.png";
+
 const useStyles = makeStyles({
   positionLogo: {
     height: "40px!important",
@@ -84,6 +87,7 @@ export function AboutMe() {
           >
             SILVIA SATOAR PLABON
           </Typography>
+          <Box style={{ marginLeft: matches ? "20px" : "80px",}}>
           <TypeAnimation
             sequence={[
               "MERN Stack Developer",
@@ -100,17 +104,18 @@ export function AboutMe() {
             style={{
               fontSize: matches ? "20px" : "22px",
               display: "inline-block",
-              marginLeft: matches ? "20px" : "80px",
+             
             }}
             repeat={Infinity}
           />
+          </Box>
           <Box
             className={`${classes.thumb} `}
             display="flex"
             justifyContent="center"
           >
             <img
-              src="https://i.ibb.co/8DybrSn/silvia-Image.png"
+              src={silviaImage}
               className={` ${classes.card_media}`}
               alt="Thumb"
             />
@@ -147,7 +152,7 @@ export function AboutMe() {
             <CardMedia
               className={classes.positionLogo}
               component="img"
-              src={jobLogo}
+              src={damacLogo}
               alt="blog image"
             />
             <Box>
@@ -163,7 +168,8 @@ export function AboutMe() {
                 sx={{ fontSize: "12px" }}
                 fontFamily="PeroRegular"
               >
-                Profecia Links Consulting Private LTD, Dubai
+                Damac Properties,Dubai
+                {/* Profecia Links Consulting Private LTD */}
               </Typography>
             </Box>
           </Box>

@@ -44,14 +44,45 @@ import ReactExperienceImage from "../assets/reactExperienceImage.jpg";
 import NodeExperienceImage from "../assets/nodejs-experience.jpg";
 import GolangExperienceImage from "../assets/golangExperience.jpg";
 import SoftwareExperienceImage from "../assets/softwareEngineeringExperience.jpg";
-import ToraniWebsite from "../assets/torani_website.jpg"
+import ToraniWebsite from "../assets/torani_website.jpg";
+
+import retrokit_image_1 from "../assets/retrokit_image_1.png"
+import retrokit_image_2 from "../assets/retrokit_image_2.png"
+import retrokit_image_3 from "../assets/retrokit_image_3.png"
+import retrokit_image_4 from "../assets/retrokit_image_4.png"
+import retrokit_image_5 from "../assets/retrokit_image_5.png"
+import Ara_image_1 from "../assets/Ara_1.png"
+import Ara_image_2 from "../assets/Ara_2.png"
+import Ara_image_3 from "../assets/Ara_3.png"
+import Ara_image_4 from "../assets/Ara_4.png"
+import Ara_image_0 from "../assets/Ara_0.png"
+import waay_1 from "../assets/2waay_1.jpg"
+import waay_2 from "../assets/2waay_2.png"
+import waay_3 from "../assets/2waay_3.png"
+import waay_4 from "../assets/2waay_4.png"
+import waay_5 from "../assets/2waay_5.png"
+import waay_6 from "../assets/2waay_6.png"
+import waay_7 from "../assets/2waay_7.png"
+import waay_8 from "../assets/2waay_8.png"
+import waay_9 from "../assets/2waay_9.jpg"
+import waay_10 from "../assets/2waay_10.png"
+import onboarding from '../assets/onboarding.png'
+import torani_1 from "../assets/torani_1.png"
+import torani_2 from "../assets/torani_2.jpeg"
+import torani_3 from "../assets/torani_3.jpeg"
+import torani_4 from "../assets/torani_4.jpeg"
+import mawaqif_1 from "../assets/mawaqif_1.png"
+import stripe from "../assets/stripe.jpg"
+import javascriptImage from "../assets/javascript.jpg"
+import javascript1Image from "../assets/javascript1or.jpg"
+import tryCatchImage from "../assets/tryCatch.png"
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const blogs: Blog[] = [
   {
     name: "Stripe Multipartner platform for the express or custom-connected account",
     link: "https://medium.com/@silviaplabon/stripe-multipartner-platform-for-the-express-or-custom-connected-account-2f8da15d3dca",
-    image: "https://i.ibb.co/1nZTBZ7/stripe.jpg",
+    image: stripe,
     id: 0,
     published_date: "Feb 26, 2023",
     subtitle:
@@ -60,7 +91,7 @@ export const blogs: Blog[] = [
   {
     name: "JS Popular Method Of String",
     link: "https://silviaplabon.medium.com/js-popular-method-of-string-b15a9c8a9839",
-    image: "https://i.ibb.co/WzkTkZ6/javascript.jpg",
+    image: javascriptImage,
     id: 1,
     published_date: "May 5, 2021",
     subtitle:
@@ -69,7 +100,7 @@ export const blogs: Blog[] = [
   {
     name: "Var Vs Let Vs Const",
     link: "https://silviaplabon.medium.com/js-popular-method-of-string-b15a9c8a9839",
-    image: "https://i.ibb.co/2nDX5nf/javascript1or.jpg",
+    image: javascript1Image,
     id: 2,
     published_date: "May 5, 2021",
     subtitle:
@@ -95,7 +126,7 @@ export const blogs: Blog[] = [
   },
   {
     name: "Javascript Exception Handling and Block Binding",
-    link: "https://medium.com/@silviaplabon/var-declarations-and-hoisting-49cc68b3e605",
+    link: tryCatchImage,
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsX-HTjawbxClMtVU7Lja4QJQVpgOncSOGxA&usqp=CAU",
     id: 5,
@@ -144,14 +175,14 @@ export const contacts: Contact[] = [
   {
     name: "Address",
     imageLink: "https://i.ibb.co/1nZTBZ7/stripe.jpg",
-    title: "Akborshah,Chittagong",
+    title: "Tecom, Barsha Heights",
     color: "#ff014f",
     icon: <FiMapPin size="21"></FiMapPin>,
   },
   {
     name: "Phone",
     imageLink: "https://i.ibb.co/1nZTBZ7/stripe.jpg",
-    title: "+8801743202786",
+    title: "+971582289526",
     color: "#fec447",
     icon: <GiHeadphones size="21"></GiHeadphones>,
   },
@@ -159,8 +190,23 @@ export const contacts: Contact[] = [
 // eslint-disable-next-line react-refresh/only-export-components
 export const experiences: Experience[] = [
   {
+    company: "Damac Properties, Dubai",
+    employmentTime: "May 15,2024 - Present",
+    description:
+      "Create responsive webpages with React and Redux. I have experience writing with TypeScript and JavaScript, as well as designing using Tailwind, Bootstrap, and Material UI to create intuitive and visually attractive user interfaces. I am committed to producing high-quality code and smooth user experiences through efficient front-end development. I help to create cutting-edge online applications by using my knowledge of React and current design frameworks.",
+    skills: [
+      "React",
+      "Typescript",
+      "Javascript",
+      "Tailwind",
+      "Bootstrap",
+      "Material"
+    ],
+    position: "Software Engineer",
+  },
+  {
     company: "Profecia Links Consulting Private LTD, Dubai",
-    employmentTime: "Aug 2021- Present",
+    employmentTime: "Aug 2021- May 2024",
     description:
       "Building websites with React, and Redux.Implementing APIs with secure techniques using Node.js and Golang. Working independently with minimal supervision, analyzing and troubleshooting issues, and interacting with the team. Standardized all output with a new, responsive, and mobile-first approach, and enhanced the quality of code and improved application performance, leading to a reduction in bugs. ",
     skills: [
@@ -174,7 +220,7 @@ export const experiences: Experience[] = [
       "Tailwind",
       "Bootstrap",
       "SCSS",
-      "SQL"
+      "SQL",
     ],
     position: "Software Engineer",
   },
@@ -255,7 +301,6 @@ export const Skills: Skill[] = [
         name: "SQL",
         logo: <AiOutlineConsoleSql size="30"></AiOutlineConsoleSql>,
       },
-   
     ],
   },
   {
@@ -275,8 +320,8 @@ export const Biography = {
   age: "26",
   birthday: "10 jan, 1998",
   email: "silviaplabon@gmail.com",
-  phone: "+8801743202786",
-  address: "Akbarshah, Chittagong",
+  phone: "+971582289526",
+  address: "Tecom, Barsha Heights",
 };
 
 export const DegreeList: Education[] = [
@@ -315,7 +360,8 @@ export const projectsList: Project[] = [
     projectYear: "2024",
     projectType: "SYRUP WEBSITE",
     clientWebsite: "torani.com",
-    description:"For business growth, particularly within the flavored syrup and beverage industry at Torani in the USA, utilized SQL queries in Google BigQuery and Snowflake to analyze website performance, track conversion metrics, and optimize advertising efforts, driving actionable insights.",
+    description:
+      "For business growth, particularly within the flavored syrup and beverage industry at Torani in the USA, utilized SQL queries in Google BigQuery and Snowflake to analyze website performance, track conversion metrics, and optimize advertising efforts, driving actionable insights.",
     performedTasks: [
       {
         technologies: "SQL-NODEJS",
@@ -326,7 +372,7 @@ export const projectsList: Project[] = [
           "Tracked conversion-related metrics such as cart abandonment rate and average time to conversion to enhance user experience and increase conversion rates.",
           "Conducted detailed analysis of revenue and sales metrics, including revenue per customer, customer lifetime value, and average order value, guiding strategic marketing decisions.",
           "Managed advertising performance metrics across various channels including Amazon, Google, and Bing, optimizing advertising campaigns for maximum ROI.",
-          "Leveraged BigQuery, Snowflake, and SQL to generate actionable insights into marketing effectiveness, website performance, and overall business health.Enabled data-driven decision-making, identification of optimization opportunities, and sustained business growth through data analysis."
+          "Leveraged BigQuery, Snowflake, and SQL to generate actionable insights into marketing effectiveness, website performance, and overall business health.Enabled data-driven decision-making, identification of optimization opportunities, and sustained business growth through data analysis.",
         ],
       },
     ],
@@ -334,27 +380,28 @@ export const projectsList: Project[] = [
 
     projectImages: [
       {
-        img: "https://i0.wp.com/www.aylishakelley.com/wp-content/uploads/2020/11/AK_Torani_Mixes-Well-Magazine_Ad_1440x1620.jpg?fit=1440%2C1620&ssl=1",
+        img: torani_1,
         title: "Torani Website Image 1",
         rows: 2,
         cols: 2,
       },
       {
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6bpubJ43eJn8Fy0PsxyRNGslJf5lIH4KsdgUr6scTnQ&s",
+        img: torani_2,
         title: "Torani Website Image 2",
       },
       {
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw99thc439sN_HTrv3tZSxZihRVK1-K_Fuqg&s",
+        img: torani_3,
         title: "Torani Website Image 3",
       },
       {
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqZvNXhm2l5Sw8s8uGSyM3A6-ahMybOOPaQQ&s",
+        img: torani_4,
         title: "Torani Website Image 4",
         cols: 2,
       },
     ],
     themeColor: "#d8392f",
-    projectOverview: "Utilized SQL queries in Google BigQuery and Snowflake to analyze website performance, track conversion metrics, and optimize advertising efforts, driving actionable insights for business growth, particularly within the flavored syrup and beverage industry. Specifically tailored strategies and insights to align with the operations, market dynamics, and product offerings of Torani, a distinguished manufacturer with a legacy of crafting high-quality flavored syrups, sauces, and beverage bases since 1925, catering to cafes, restaurants, and households globally.",
+    projectOverview:
+      "Utilized SQL queries in Google BigQuery and Snowflake to analyze website performance, track conversion metrics, and optimize advertising efforts, driving actionable insights for business growth, particularly within the flavored syrup and beverage industry. Specifically tailored strategies and insights to align with the operations, market dynamics, and product offerings of Torani, a distinguished manufacturer with a legacy of crafting high-quality flavored syrups, sauces, and beverage bases since 1925, catering to cafes, restaurants, and households globally.",
   },
   {
     typeOfContent: "all_website_frontend",
@@ -378,27 +425,30 @@ export const projectsList: Project[] = [
         ],
       },
     ],
-    imageUrl: "https://i.ibb.co/W3ZtTvJ/retrokit.png",
+    imageUrl: retrokit_image_1,
 
     projectImages: [
       {
-        img: "https://i.ibb.co/MSNJ8tR/Screenshot-from-2023-11-05-10-44-21.png",
+        img: retrokit_image_1,
         title: "Hea Modal 1",
         rows: 2,
         cols: 2,
       },
       {
-        img: "https://i.ibb.co/kQ7kxvB/hea-Model2.png",
+        img: retrokit_image_2,
         title: "Hea Modal2",
       },
       {
-        img: "https://i.ibb.co/9ZYKbWW/hea-Model3.png",
+        img: retrokit_image_3,
         title: "Hea Modal3",
       },
       {
-        img: "https://i.ibb.co/kB3CcT5/hea-Model4.png",
+        img: retrokit_image_4,
         title: "Hea Modal 4",
-        cols: 2,
+      },
+      {
+        img: retrokit_image_5,
+        title: "Hea Modal 5",
       },
     ],
     themeColor: "#353450",
@@ -426,21 +476,21 @@ export const projectsList: Project[] = [
     ],
     projectImages: [
       {
-        img: "https://i.ibb.co/B45fmSg/Screenshot-from-2023-11-05-09-01-07.png",
+        img: Ara_image_1,
         title: "Arasass 1",
         rows: 2,
         cols: 2,
       },
       {
-        img: "https://i.ibb.co/KW7Nbfn/Screenshot-from-2023-11-05-09-00-34.png",
+        img: Ara_image_2,
         title: "Arasass 2",
       },
       {
-        img: "https://i.ibb.co/hXW0Wkt/Screenshot-from-2023-11-05-08-58-39.png",
+        img: Ara_image_3,
         title: "Arasass 3",
       },
       {
-        img: "https://i.ibb.co/dBjkj5n/Screenshot-from-2023-11-05-08-58-13.png",
+        img: Ara_image_4,
         title: "Arasass 4",
         cols: 2,
       },
@@ -450,7 +500,7 @@ export const projectsList: Project[] = [
       "Implemented a calendar scheduler for efficient booking system management, added an addon feature for accessing free and paid services, ensured responsiveness across all screen sizes and devices, and addressed and resolved bug-related issues.",
 
     imageUrl:
-      "https://i.ibb.co/xjjQc9M/Screenshot-from-2023-11-04-16-40-02.png",
+     Ara_image_0,
     themeColor: "#00805d",
     projectOverview:
       "The Ara SAAS Framework is a software-as-a-service solution that can be hosted in the cloud or on-premises. With the primary premise of 'Building by configuration, not by code' many functionalities can be developed by an administrator or business user without the need for a developer until absolutely necessary. Building a new business component such as workflow management, CRM, or asset tracking can be completed in a few days by a single individual, rather than months of team effort.",
@@ -465,51 +515,51 @@ export const projectsList: Project[] = [
     clientWebsite: "",
     projectImages: [
       {
-        img: "https://i.ibb.co/CM7MWvt/2waay.jpg",
+        img: waay_1,
         title: "mobylogic",
         rows: 2,
         cols: 2,
       },
       {
-        img: "https://i.ibb.co/9qmBxvk/Screenshot-from-2023-11-21-10-10-07.png",
+        img: waay_2,
         title: "2waay",
       },
       {
-        img: "https://i.ibb.co/8j3MbDQ/campaigns.png",
+        img: waay_3,
         title: "campaigns",
       },
       {
-        img: "https://i.ibb.co/GQqNLcv/collections.png",
+        img: waay_4,
         title: "mobylogic",
         cols: 2,
       },
       {
-        img: " https://i.ibb.co/h1zv9SK/cancel-Requests.png",
+        img: waay_5,
         title: "2waay",
         rows: 2,
         cols: 2,
       },
       {
-        img: "https://i.ibb.co/GW2bzvt/report.png",
+        img: waay_6,
         title: "stripe",
       },
       {
-        img: "https://i.ibb.co/CH5DcFZ/billing.png",
+        img: waay_7,
         title: "mobylogic",
       },
       {
-        img: "https://i.ibb.co/MZ5DwqN/users.png",
+        img: waay_8,
         title: "2waay",
         cols: 2,
       },
       {
-        img: "https://i.ibb.co/BNsgMnD/2waay-App-jpg.jpg",
+        img: waay_9,
         title: "stripe",
         rows: 2,
         cols: 2,
       },
       {
-        img: "https://i.ibb.co/MC384HJ/campaign-Conversion-Report.png",
+        img: waay_10,
         title: "stripe",
         cols: 2,
         rows: 2,
@@ -537,12 +587,22 @@ export const projectsList: Project[] = [
           "All types of functionality are incorporated for company control.",
         ],
       },
+      {
+        technologies: "REACT",
+        tasks: [
+          
+        "Collaborated with the frontend team to ensure a visually engaging platform.",
+        "Optimized the interface for consistency and performance across devices.",
+        "Identified and fixed bugs in React components to enhance stability.",
+        "Implemented new features and improvements based on client's feedback."
+        ],
+      },
     ],
 
     description:
-      "As the main backend developer for Mobylogic's Two Waay project, which targets the US market, I implemented core features using Node.js and Golang, including chat functionality, payment integration, merchant management, campaign management, and reporting. ",
+      "As the main backend developer for Mobylogic's Two Waay project, which targets the US market, I implemented core features using Node.js and Golang, including chat functionality, payment integration, merchant management, campaign management, and reporting. But my involvement didn’t stop at the backend. As the backend tasks were mostly done, I began contributing to the frontend, leveraging React to create seamless user experiences. By collaborating closely with the frontend team, I ensured that the platform was intuitive and visually engaging, providing users with a fluid interaction with the Two Waay platform.",
 
-    imageUrl: "https://i.ibb.co/CM7MWvt/2waay.jpg",
+    imageUrl:waay_1,
     themeColor: "#ffe8e0",
     projectOverview:
       "2Waay is a Social Commerce App that combines Socializing, Entertainment and Shopping all into one platform. By bringing these features together we can create great experiences in ways that the older generation platforms cannot do.",
@@ -556,7 +616,7 @@ export const projectsList: Project[] = [
     projectType: "APARTMENT BILLING",
     projectImages: [
       {
-        img: "https://i.ibb.co/89wzrPY/onboarding.png",
+        img: onboarding,
         title: "damac",
         rows: 1,
         cols: 4,
@@ -576,7 +636,7 @@ export const projectsList: Project[] = [
     ],
     description:
       "implemented features for Damac's Dubai-based employee onboarding project, including request and task lookup, task creation, document uploading, and form processing.",
-    imageUrl: "https://i.ibb.co/89wzrPY/onboarding.png",
+    imageUrl: onboarding,
     themeColor: "#73a3bd",
     projectOverview:
       "This project involves bringing together the right people, resources, and processes to effectively plan, manage, and deliver the project's objectives. ",
@@ -591,7 +651,7 @@ export const projectsList: Project[] = [
     projectType: "APARTMENT BILLING",
     projectImages: [
       {
-        img: "https://i.ibb.co/Vw6Myvg/Screenshot-from-2023-11-04-17-38-23.png",
+        img:mawaqif_1,
         title: "mawaqif",
         rows: 2,
         cols: 4,
@@ -616,14 +676,28 @@ export const projectsList: Project[] = [
     description:
       "Developed the chat and video interfaces for connecting officers with each other using React Native, Redux Toolkit, Emotion, and Socket.io. I also tested parking permit instances that interact like actual users using Detox.",
     imageUrl:
-      "https://i.ibb.co/Vw6Myvg/Screenshot-from-2023-11-04-17-38-23.png",
+      mawaqif_1,
     themeColor: "#cfdfdf",
     projectOverview:
-      "MAWAQiF offers the Rechargeable Card as a payment method for parking fees in the Emirate of Abu Dhabi.",
+      "MAWAQIF offers the Rechargeable Card as a payment method for parking fees in United Arab Emirates.",
   },
 ];
+
+
+
+const startDate = new Date('2021-08-01'); // Assuming the start date is July 1st, 2019
+const currentDate = new Date();
+
+let  diffInMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12 
+diffInMonths -= currentDate.getMonth();
+diffInMonths += currentDate.getMonth();
+diffInMonths=diffInMonths <= 0 ? 0 : diffInMonths;
+const years = Math.floor(diffInMonths / 12);
+const months = diffInMonths % 12;
+console.log(months,years,"months",diffInMonths)
+
 export const aboutText: string =
-  "I have around 2 years and 9 months of experience as a software developer, with a focus on frontend and backend development. I am proficient in React, JavaScript, ES6, HTML, CSS, Bootstrap, Material-UI, Redux, SASS, Typescript, and React-Native. I also have sharpen experience with backend development using Node.js and Golang. I am looking forward to contributing to an exciting and fast-moving company, and I feel I can do so with my skill, extensive knowledge, and creativity.";
+  `I have around ${years} years ${months>0?`and ${months} months`:''} of experience as a software developer, with a focus on frontend and backend development. I am proficient in React, JavaScript, ES6, HTML, CSS, Bootstrap, Material-UI, Redux, SASS, Typescript, and React-Native. I also have sharpen experience with backend development using Node.js and Golang. I am looking forward to contributing to an exciting and fast-moving company, and I feel I can do so with my skill, extensive knowledge, and creativity.`;
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const socialLinks: SocialLink[] = [
@@ -645,8 +719,14 @@ export const socialLinks: SocialLink[] = [
     name: "Linkedin",
     link: "https://www.linkedin.com/in/silviaplabon",
     logo: (
-      <FaLinkedin color="#0072b1" size="40" href="" padding="0px!important"     id="faLinkedIn"
-      class="faLinkedIn"/>
+      <FaLinkedin
+        color="#0072b1"
+        size="40"
+        href=""
+        padding="0px!important"
+        id="faLinkedIn"
+        class="faLinkedIn"
+      />
     ),
   },
   {

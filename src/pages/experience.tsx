@@ -50,14 +50,14 @@ export function Experience() {
               sx={{ fontSize: "12px", fontWeight: "500" }}
               fontFamily="PeroRegular"
             >
-              Profecia Links Consulting Private LTD, Dubai
+              {/* Profecia Links Consulting Private LTD */}
             </Typography>
             <Typography px={2} fontFamily="PeroRegular">
-              I've harnessed the power of Node.js and Golang to create robust
+              I've harnessed the power of <span style={{fontWeight:'600!important',color:"#ff041f"}}>Node.js</span> and <span style={{fontWeight:'bold',color:"#ff041f"}}>Golang</span>to create robust
               APIs. These APIs serve as the backbone for feature-rich,
               versatile, and scalable applications, empowering developers of all
               levels. Explore the limitless potential of API development with my
-              expertise. Dedicated to React JS, I utilize this cutting-edge
+              expertise. Dedicated to <span style={{fontWeight:'bold',color:"#ff041f"}}>React JS</span>, I utilize this cutting-edge
               framework not just as a tool but as a vision for my work. I
               specialize in managing and crafting extensive React JS
               applications, driven by my passion for excellence.
