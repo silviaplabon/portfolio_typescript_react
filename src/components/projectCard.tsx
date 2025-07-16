@@ -55,6 +55,11 @@ const useStyles = makeStyles({
   },
 });
 function srcset(image: string, size: number, rows = 1, cols = 1) {
+  // return {
+  //   src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
+  //   srcSet: `${image}?w=${size * cols}&h=${size * rows}&auto=format&dpr=2 2x`,
+  // };
+
   return {
     src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
     srcSet: `${image}?w=${size * cols}&h=${
@@ -80,7 +85,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <CardContent>
         <Box
           sx={{
-            height: "260px",
+            height: "220px",
             borderRadius: "10px",
             width: "100%",
             backgroundColor: project.themeColor,
@@ -92,10 +97,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <CardMedia
             className={classes.card_media}
             component="img"
-            height="230"
             sx={{
               borderRadius: "10px",
               width: "90%",
+              objectFit: "contain",
               margin: "auto",
               boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
             }}
@@ -197,7 +202,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               </Typography>
               <Typography
                 id="modal-modal-description"
-                sx={{ mt: 2, fontWeight: "bold" }}
+                sx={{ mt: 1, fontWeight: "bold" }}
                 fontFamily="PeroBold"
               >
                 PROJECT OVERVIEW
@@ -207,7 +212,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               </Typography>
 
               <Typography
-                sx={{ marginTop: "20px", fontStyle: "italic" }}
+                sx={{ marginTop: "10px", fontStyle: "italic" }}
                 fontFamily="PeroRegular"
               >
                 {project.description}
@@ -216,7 +221,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 sx={{
                   backgroundColor: "#ffe7c7",
                   color: "#162032",
-                  marginTop: "20px",
+                  marginTop: "10px",
                   borderRadius: "10px!important",
                   boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
                 }}
@@ -254,50 +259,43 @@ export function ProjectCard({ project }: ProjectCardProps) {
                         ))}
                       </Box>
                     ))}
-                  {/* <Grid item xs={12} sm={6}>
-                  <Typography sx={{ fontWeight: "bold" }}>Client</Typography>
-                  <Typography>RETROKIT</Typography>
+               
                 </Grid>
-                <Grid item xs={12} sm={6}>
-                  <Typography sx={{ fontWeight: "bold" }}>
-                    PROJECT TYPE
-                  </Typography>
-                  <Typography>ECOMMERCE</Typography>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <Typography sx={{ fontWeight: "bold" }}>Address</Typography>
-                  <Typography>USA</Typography>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <Typography sx={{ fontWeight: "bold" }}>YEAR</Typography>
-                  <Typography>2021</Typography>
-                </Grid> */}
-                </Grid>
-                {/* </SimpleBar> */}
+               
               </Card>
 
-              {/* <SimpleBar style={{ height: "350px", marginTop: "10px" }}> */}
               <ImageList
-                sx={{ width: "100%" }}
+                sx={{ width: "100%", height:'auto' }}
                 variant="quilted"
                 cols={4}
-                rowHeight={175}
+                rowHeight={200}
               >
-                {project.projectImages.map((item) => (
-                  <ImageListItem
-                    key={item.img}
-                    cols={item.cols || 1}
-                    rows={item.rows || 1}
-                  >
-                    <img
-                      {...srcset(item.img, 175, item.rows, item.cols)}
-                      alt={item.title}
-                      loading="lazy"
-                      style={{ objectFit: "cover" }}
-                    />
-                  </ImageListItem>
-                ))}
+                {project.projectImages.map((item) => {
+                  const height = (item.rows ?? 1) > 1 ? "400px" : "200px";
+
+                  return (
+                    <ImageListItem
+                      key={item.img}
+                      cols={item.cols || 1}
+                      rows={item.rows || 1}
+                    >
+                      <img
+                        {...srcset(item.img, 200, item.rows, item.cols)}
+                        alt={item.title}
+                        loading="lazy"
+                        style={{
+                          objectFit: "cover",
+                          width: "100%",
+                          height,
+                          display: "block",
+                        }}
+                      />
+                 
+                    </ImageListItem>
+                  );
+                })}
               </ImageList>
+
               {/* </SimpleBar> */}
             </Box>
           </SimpleBar>

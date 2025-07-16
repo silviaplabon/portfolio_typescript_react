@@ -46,36 +46,60 @@ import GolangExperienceImage from "../assets/golangExperience.jpg";
 import SoftwareExperienceImage from "../assets/softwareEngineeringExperience.jpg";
 import ToraniWebsite from "../assets/torani_website.jpg";
 
-import retrokit_image_1 from "../assets/retrokit_image_1.png"
-import retrokit_image_2 from "../assets/retrokit_image_2.png"
-import retrokit_image_3 from "../assets/retrokit_image_3.png"
-import retrokit_image_4 from "../assets/retrokit_image_4.png"
-import retrokit_image_5 from "../assets/retrokit_image_5.png"
-import Ara_image_1 from "../assets/Ara_1.png"
-import Ara_image_2 from "../assets/Ara_2.png"
-import Ara_image_3 from "../assets/Ara_3.png"
-import Ara_image_4 from "../assets/Ara_4.png"
-import Ara_image_0 from "../assets/Ara_0.png"
-import waay_1 from "../assets/2waay_1.jpg"
-import waay_2 from "../assets/2waay_2.png"
-import waay_3 from "../assets/2waay_3.png"
-import waay_4 from "../assets/2waay_4.png"
-import waay_5 from "../assets/2waay_5.png"
-import waay_6 from "../assets/2waay_6.png"
-import waay_7 from "../assets/2waay_7.png"
-import waay_8 from "../assets/2waay_8.png"
-import waay_9 from "../assets/2waay_9.jpg"
-import waay_10 from "../assets/2waay_10.png"
-import onboarding from '../assets/onboarding.png'
-import torani_1 from "../assets/torani_1.png"
-import torani_2 from "../assets/torani_2.jpeg"
-import torani_3 from "../assets/torani_3.jpeg"
-import torani_4 from "../assets/torani_4.jpeg"
-import mawaqif_1 from "../assets/mawaqif_1.png"
-import stripe from "../assets/stripe.jpg"
-import javascriptImage from "../assets/javascript.jpg"
-import javascript1Image from "../assets/javascript1or.jpg"
-import tryCatchImage from "../assets/tryCatch.png"
+import retrokit_image_1 from "../assets/retrokit_image_1.png";
+import retrokit_image_2 from "../assets/retrokit_image_2.png";
+import retrokit_image_3 from "../assets/retrokit_image_3.png";
+import retrokit_image_4 from "../assets/retrokit_image_4.png";
+import retrokit_image_5 from "../assets/retrokit_image_5.png";
+import Ara_image_1 from "../assets/Ara_1.png";
+import Ara_image_2 from "../assets/Ara_2.png";
+import Ara_image_3 from "../assets/Ara_3.png";
+import Ara_image_4 from "../assets/Ara_4.png";
+import Ara_image_0 from "../assets/Ara_0.png";
+import waay_1 from "../assets/2waay_1.jpg";
+import waay_2 from "../assets/2waay_2.png";
+import waay_3 from "../assets/2waay_3.png";
+import waay_4 from "../assets/2waay_4.png";
+import waay_5 from "../assets/2waay_5.png";
+import waay_6 from "../assets/2waay_6.png";
+import waay_7 from "../assets/2waay_7.png";
+import waay_8 from "../assets/2waay_8.png";
+import waay_9 from "../assets/2waay_9.jpg";
+import waay_10 from "../assets/2waay_10.png";
+import onboarding from "../assets/onboarding.png";
+import onboarding1 from "../assets/onboarding-1.png";
+import torani_1 from "../assets/torani_1.png";
+import torani_2 from "../assets/torani_2.jpeg";
+import torani_3 from "../assets/torani_3.jpeg";
+import torani_4 from "../assets/torani_4.jpeg";
+import mawaqif_1 from "../assets/mawaqif_1.png";
+import stripe from "../assets/stripe.jpg";
+import javascriptImage from "../assets/javascript.jpg";
+import javascript1Image from "../assets/javascript1or.jpg";
+import tryCatchImage from "../assets/tryCatch.png";
+import Resignation_home from "../assets/Resignation_1.png";
+import Resignation_emp_dashboard from "../assets/Resignation_emp_dashboard.png";
+import Resignation_action from "../assets/Resignation_employee_view.png";
+import Resignation_request_view from "../assets/Resignation_request_view.png";
+
+import HRPolicies1 from "../assets/HR_policies_1.png";
+
+import HRPolicies2 from "../assets/HR_policies_2.png";
+
+import HRPolicies3 from "../assets/Hr_policies_3.png";
+
+import HRPoliciesPublicHolidays from "../assets/Hr_policies_Public_holidays.png";
+
+import HRPoliciesLegalEntityByCountries from "../assets/Hr_Policies_4_Legal_entity_by_countries.png";
+import RGS_1 from "../assets/RGS_1.png";
+
+import RGS_2 from "../assets/RGS_2.png";
+import RGS_3 from "../assets/RGS_3.png";
+import RGS_4 from "../assets/RGS_4.png";
+import RGS_5 from "../assets/RGS_5.png";
+import onboarding_report from '../assets/onboarding_report.png'
+import onboarding_mytasks from '../assets/onboarding_mytasks.png'
+import onboarding_projectAllocation from '../assets/onboarding_project_allocation.png'
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const blogs: Blog[] = [
@@ -182,7 +206,7 @@ export const contacts: Contact[] = [
   {
     name: "Phone",
     imageLink: "https://i.ibb.co/1nZTBZ7/stripe.jpg",
-    title: "+971582289526",
+    title: "+971582614341",
     color: "#fec447",
     icon: <GiHeadphones size="21"></GiHeadphones>,
   },
@@ -193,16 +217,18 @@ export const experiences: Experience[] = [
     company: "Damac Properties, Dubai",
     employmentTime: "May 15,2024 - Present",
     description:
-      "Create responsive webpages with React and Redux. I have experience writing with TypeScript and JavaScript, as well as designing using Tailwind, Bootstrap, and Material UI to create intuitive and visually attractive user interfaces. I am committed to producing high-quality code and smooth user experiences through efficient front-end development. I help to create cutting-edge online applications by using my knowledge of React and current design frameworks.",
+      "Create responsive webpages with React. I have experience writing with TypeScript and JavaScript, as well as designing using Tailwind, Bootstrap, and Material UI to create intuitive and visually attractive user interfaces. I am committed to producing high-quality code and smooth user experiences through efficient front-end development. I help to create cutting-edge online applications by using my knowledge of React and current design frameworks.",
     skills: [
       "React",
       "Typescript",
       "Javascript",
       "Tailwind",
       "Bootstrap",
-      "Material"
+      "Material",
+      "Redux",
+      "Nodejs",
     ],
-    position: "Software Engineer",
+    position: "Senior Software Engineer",
   },
   {
     company: "Profecia Links Consulting Private LTD, Dubai",
@@ -225,12 +251,12 @@ export const experiences: Experience[] = [
     position: "Software Engineer",
   },
   {
-    company: "International Islamic University Chittagong",
-    employmentTime: "Jan 2021 - Jun 2021",
+    company: "Programming Hero",
+    employmentTime: "Jan 2021 - July 2021",
     description:
-      "Guiding students, supporting exams, success in every class.Enriching learning, fostering growth, excellence in OS.",
+      "Collaborated closely with a cross-functional team to deliver real-world project solutions.Enhanced problem-solving abilities through hands-on web development challenges.",
     skills: [],
-    position: "Teaching Assistant",
+    position: "Internship",
   },
 ];
 
@@ -320,7 +346,7 @@ export const Biography = {
   age: "26",
   birthday: "10 jan, 1998",
   email: "silviaplabon@gmail.com",
-  phone: "+971582289526",
+  phone: "+971582614341",
   address: "Tecom, Barsha Heights",
 };
 
@@ -352,6 +378,167 @@ export const DegreeList: Education[] = [
 ];
 // eslint-disable-next-line react-refresh/only-export-components
 export const projectsList: Project[] = [
+  {
+    typeOfContent: "all_website_backend",
+    projectName: "Resignation",
+    clientName: "Damac",
+    clientAddress: "South San Francisco, California, United States",
+    projectYear: "2024",
+    projectType: "SYRUP WEBSITE",
+    clientWebsite: "torani.com",
+    description:
+      "Multi-level resignation process for Damac employees, enabling streamlined approvals from managers, HODs, HR, and CMO, with real-time tracking and HR decision support.",
+    performedTasks: [
+      {
+        technologies: "REACT",
+        tasks: [
+          "Designed and developed a multi-level employee resignation workflow with approvals from manager, HOD, HR, and CMO.",
+          "Built employee-facing UI for resignation request creation and a dashboard showing assigned tasks based on role.",
+          "Used React, Redux, TypeScript, RTK Query, and React Hook Form for dynamic UI and real-time updates.",
+          "Enabled HR decision support through role-based views and actionable insights.",
+        ],
+      },
+    ],
+    imageUrl: Resignation_home,
+
+    projectImages: [
+      {
+        img: Resignation_home,
+        title: "Resignation Dashboard",
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: Resignation_emp_dashboard,
+        title: "Employee Dashboard",
+      },
+      {
+        img: Resignation_request_view,
+        title: "Request View",
+      },
+      {
+        img: Resignation_action,
+        title: "HODHRCMOACTION",
+        cols: 2,
+      },
+    ],
+    themeColor: "#353450",
+    projectOverview: "",
+  },
+  {
+    typeOfContent: "all_website_frontend",
+    projectName: "HR Policies",
+    clientName: "Damac",
+    clientAddress: "South San Francisco, California, United States",
+    projectYear: "2024",
+    projectType: "SYRUP WEBSITE",
+    clientWebsite: "torani.com",
+    description:
+      "Built a dynamic HR policy module based on country, displaying location and company-specific policies for DAMAC Data Center employees.",
+    performedTasks: [
+      {
+        technologies: "REACT,NODEJS,SQL",
+        tasks: [
+          "Built Dynamic HR Policy Module – Designed a country-specific HR policy system for DAMAC Data Center employees.",
+          "Location-Based Policy Display – Displayed relevant policies based on employee location and legal entity.",
+          "Business Unit Filtering – Enabled filtering of policies by employee's business unit for quick access.",
+          "Country-Specific Frameworks – Defined unique frameworks per country including legal entities and holidays.",
+          "Legal Entity Management – Created components to manage legal entities linked with locations and policies.",
+          "Location Mapping – Mapped office locations to countries and legal entities.",
+          "Integrated Public Holidays – Added region-wise public holidays into the policy module.",
+          "Policy Versioning – Implemented version control for tracking policy updates.",
+          "Role-Based Access – Set access permissions for employees and HR teams.",
+          "Intuitive UI – Designed a clean UI for easy policy navigation and filtering.",
+        ],
+      },
+    ],
+    imageUrl: HRPolicies1,
+    projectImages: [
+      {
+        img: HRPolicies1,
+        title: "Hr Policies Dashboard",
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: HRPolicies2,
+        title: "Hr policy Dashboard",
+      },
+      {
+        img: HRPolicies3,
+        title: "HR Policies 3 ",
+      },
+      {
+        img: HRPoliciesPublicHolidays,
+        title: "public holidays hr policies",
+        cols: 2,
+      },
+      {
+        img: HRPoliciesLegalEntityByCountries,
+        title: "Hr policies legal entity by countries",
+        cols: 2,
+      },
+    ],
+    themeColor: "rgb(20, 160, 152)",
+    projectOverview: "",
+  },
+
+  {
+    typeOfContent: "all_website_frontend",
+    projectName: "Rental Guarantee & Claims",
+    clientName: "Damac",
+    clientAddress: "South San Francisco, California, United States",
+    projectYear: "2024",
+    projectType: "SYRUP WEBSITE",
+    clientWebsite: "torani.com",
+    description:
+      "Designed and automated the rental guarantee and claims processes for DAMAC. Ensured timely landlord payments upon tenant default, implemented discount policies, and streamlined payout workflows with a clean UI and tracking system.",
+    performedTasks: [
+      {
+        technologies: "REACT",
+        tasks: [
+          "Rental Guarantee Process Design – Designed registration and claims flow including qualification logic based on policies.",
+          "Automated Landlord Payouts – Automated timely payments in case of tenant defaults with offline/manual interface.",
+          "Intuitive Guarantee Management UI – Built a dashboard for tracking units, offers, payout status, and registration details.",
+          "Discount Policy Engine – Implemented dynamic discount logic based on policy rules and value ranges.",
+          "Booking Offers Display – Integrated unit-level data: Unit Type, Reg Date, Status, Qualified, Payable, Paid, Balance, and Customer Info.",
+          "Payout Processing – Displayed payable, paid, and balance amounts with transaction reference support and hold flags.",
+          "Policy-Based Qualification – Evaluated unit eligibility and payment terms using defined business rules and offer IDs.",
+          "Manual Payout Interface – Enabled offline/manual transaction entry with references for audit and tracking.",
+        ],
+      },
+    ],
+    imageUrl: RGS_1,
+    projectImages: [
+      {
+        img: RGS_1,
+        title: "Hr Policies Dashboard",
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: RGS_2,
+        title: "Hr policy Dashboard",
+      },
+      {
+        img: RGS_3,
+        title: "HR Policies 3 ",
+      },
+      {
+        img: RGS_4,
+        title: "public holidays hr policies",
+   
+      },
+      {
+        img: RGS_5,
+        title: "Hr policies legal entity by countries",
+        // cols: 2,
+      },
+    ],
+    themeColor: "rgb(51, 113, 158)",
+    projectOverview: "",
+  },
+
   {
     typeOfContent: "all_website_backend",
     projectName: "TORANI",
@@ -499,8 +686,7 @@ export const projectsList: Project[] = [
     description:
       "Implemented a calendar scheduler for efficient booking system management, added an addon feature for accessing free and paid services, ensured responsiveness across all screen sizes and devices, and addressed and resolved bug-related issues.",
 
-    imageUrl:
-     Ara_image_0,
+    imageUrl: Ara_image_0,
     themeColor: "#00805d",
     projectOverview:
       "The Ara SAAS Framework is a software-as-a-service solution that can be hosted in the cloud or on-premises. With the primary premise of 'Building by configuration, not by code' many functionalities can be developed by an administrator or business user without the need for a developer until absolutely necessary. Building a new business component such as workflow management, CRM, or asset tracking can be completed in a few days by a single individual, rather than months of team effort.",
@@ -590,11 +776,10 @@ export const projectsList: Project[] = [
       {
         technologies: "REACT",
         tasks: [
-          
-        "Collaborated with the frontend team to ensure a visually engaging platform.",
-        "Optimized the interface for consistency and performance across devices.",
-        "Identified and fixed bugs in React components to enhance stability.",
-        "Implemented new features and improvements based on client's feedback."
+          "Collaborated with the frontend team to ensure a visually engaging platform.",
+          "Optimized the interface for consistency and performance across devices.",
+          "Identified and fixed bugs in React components to enhance stability.",
+          "Implemented new features and improvements based on client's feedback.",
         ],
       },
     ],
@@ -602,7 +787,7 @@ export const projectsList: Project[] = [
     description:
       "As the main backend developer for Mobylogic's Two Waay project, which targets the US market, I implemented core features using Node.js and Golang, including chat functionality, payment integration, merchant management, campaign management, and reporting. But my involvement didn’t stop at the backend. As the backend tasks were mostly done, I began contributing to the frontend, leveraging React to create seamless user experiences. By collaborating closely with the frontend team, I ensured that the platform was intuitive and visually engaging, providing users with a fluid interaction with the Two Waay platform.",
 
-    imageUrl:waay_1,
+    imageUrl: waay_1,
     themeColor: "#ffe8e0",
     projectOverview:
       "2Waay is a Social Commerce App that combines Socializing, Entertainment and Shopping all into one platform. By bringing these features together we can create great experiences in ways that the older generation platforms cannot do.",
@@ -618,8 +803,26 @@ export const projectsList: Project[] = [
       {
         img: onboarding,
         title: "damac",
-        rows: 1,
-        cols: 4,
+        rows: 2,
+        cols: 2,
+      },
+      {
+        img: onboarding1,
+        title: "damac",
+     
+      },
+       {
+        img: onboarding_report,
+        title: "damac",
+     
+      },
+       {
+        img: onboarding_mytasks,
+        title: "damac",
+      },  {
+        img: onboarding_projectAllocation,
+        title: "damac",
+    
       },
     ],
     clientWebsite: "",
@@ -651,7 +854,7 @@ export const projectsList: Project[] = [
     projectType: "APARTMENT BILLING",
     projectImages: [
       {
-        img:mawaqif_1,
+        img: mawaqif_1,
         title: "mawaqif",
         rows: 2,
         cols: 4,
@@ -675,29 +878,25 @@ export const projectsList: Project[] = [
     ],
     description:
       "Developed the chat and video interfaces for connecting officers with each other using React Native, Redux Toolkit, Emotion, and Socket.io. I also tested parking permit instances that interact like actual users using Detox.",
-    imageUrl:
-      mawaqif_1,
+    imageUrl: mawaqif_1,
     themeColor: "#cfdfdf",
     projectOverview:
       "MAWAQIF offers the Rechargeable Card as a payment method for parking fees in United Arab Emirates.",
   },
 ];
 
-
-
-const startDate = new Date('2021-08-01'); // Assuming the start date is July 1st, 2019
+const startDate = new Date("2020-12-31"); // Assuming the start date is July 1st, 2019
 const currentDate = new Date();
 
-let  diffInMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12 
+let diffInMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12;
 diffInMonths -= currentDate.getMonth();
 diffInMonths += currentDate.getMonth();
-diffInMonths=diffInMonths <= 0 ? 0 : diffInMonths;
+diffInMonths = diffInMonths <= 0 ? 0 : diffInMonths;
 const years = Math.floor(diffInMonths / 12);
 const months = diffInMonths % 12;
-console.log(months,years,"months",diffInMonths)
-
-export const aboutText: string =
-  `I have around ${years} years ${months>0?`and ${months} months`:''} of experience as a software developer, with a focus on frontend and backend development. I am proficient in React, JavaScript, ES6, HTML, CSS, Bootstrap, Material-UI, Redux, SASS, Typescript, and React-Native. I also have sharpen experience with backend development using Node.js and Golang. I am looking forward to contributing to an exciting and fast-moving company, and I feel I can do so with my skill, extensive knowledge, and creativity.`;
+console.log(months, years, "months", diffInMonths);
+const updatedYears = months > 6 ? years + 1 : years;
+export const aboutText: string = `I have around ${updatedYears} years of experience as a software developer, with a focus on frontend and backend development. I am proficient in React, JavaScript, ES6, HTML, CSS, Bootstrap, Material-UI, Redux, SASS, Typescript, and React-Native. I also have sharpen experience with backend development using Node.js and Golang. I am looking forward to contributing to an exciting and fast-moving company, and I feel I can do so with my skill, extensive knowledge, and creativity.`;
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const socialLinks: SocialLink[] = [
